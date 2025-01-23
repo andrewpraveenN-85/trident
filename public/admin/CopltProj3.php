@@ -1,6 +1,10 @@
 <?php
 include '../db_connect.php';
-
+session_start();
+if(!isset($_SESSION['role']) && $_SESSION['role'] !== 'admin'){
+    header("Location: login.php");
+    exit();
+}
 // Fetch the project_id from the URL
 $project_id = isset($_GET['project_id']) ? $_GET['project_id'] : null;
 

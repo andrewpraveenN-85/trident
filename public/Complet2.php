@@ -38,7 +38,7 @@ $conn->close();
     <!-- Main Section -->
     <section class="container mx-auto px-4 sm:px-6 py-6 text-center">
         <!-- Heading -->
-        <h1 class="text-3xl sm:text-4xl font-bold text-red-800 mb-4">COMPLETE PROJECTS</h1>
+        <h1 class="text-3xl sm:text-4xl font-bold text-red-800 mb-4">COMPLETED PROJECTS</h1>
         <p class="text-base sm:text-lg text-gray-700 mb-8">
             We’re proud of the homes we’ve built and the dreams we’ve made a reality. Each project reflects our commitment to quality and modern design.
             Explore our completed projects and see how we’ve created spaces for better living.

@@ -1,6 +1,10 @@
 <?php
 include '../db_connect.php';
-
+session_start();
+if(!isset($_SESSION['role']) && $_SESSION['role'] !== 'admin'){
+    header("Location: login.php");
+    exit();
+}
 // Handle form submission
 if (isset($_POST["upload"])) {
     $project_name = $conn->real_escape_string($_POST['project_name']);

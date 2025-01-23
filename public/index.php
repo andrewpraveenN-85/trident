@@ -17,48 +17,6 @@ $result = $conn->query($sql);
 
 <body class="bg-gray-50">
 
-<header class="bg-white border-b border-gray-200">
-  <div class="container mx-auto px-4 py-2 flex justify-between items-center">
-    <!-- Left Section -->
-    <div class="flex items-center">
-      <span class="text-yellow-600 font-semibold text-sm mr-4">HOTLINE: +94 710 777 666</span>
-      <div class="flex space-x-4">
-        <a href="#" class="text-yellow-600 hover:text-yellow-800">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="#" class="text-yellow-600 hover:text-yellow-800">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="#" class="text-yellow-600 hover:text-yellow-800">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="#" class="text-yellow-600 hover:text-yellow-800">
-          <i class="fab fa-youtube"></i>
-        </a>
-      </div>
-    </div>
-
-    <!-- Center Section -->
-    <div>
-      <img src="logo.png" alt="Logo" class="h-12">
-    </div>
-
-    <!-- Right Section -->
-    <div class="flex items-center space-x-6">
-      <a href="#apartments" class="text-blue-700 hover:underline">Apartments</a>
-      <a href="#about-us" class="text-blue-700 hover:underline">About Us</a>
-      <a href="#contact-us" class="text-blue-700 hover:underline">Contact Us</a>
-      <a href="#lands-houses" class="text-blue-700 hover:underline">Lands & Houses</a>
-      <div>
-        <button class="flex items-center text-yellow-600 hover:text-yellow-800">
-          <i class="fas fa-bars mr-1"></i> MENU
-        </button>
-      </div>
-    </div>
-  </div>
-</header>
-
-
    <!-- Outer Container -->
    <div class="flex flex-col items-center bg-white h-screen">
     <!-- Auto-Sliding Section -->

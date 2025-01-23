@@ -274,7 +274,7 @@ $result = $conn->query($sql);
           COMPLETED PROJECTS
         </h1>
   <!-- Grid Layout -->
-  <div class="grid md:grid-cols-3 grid-cols-2 gap-0 w-full h-screen  object-cover filter brightness-75 contrast-80 ">
+  <div class="grid md:grid-cols-3 grid-cols-2 gap-0 w-full h-[400px]  object-cover filter brightness-75 contrast-80 ">
   <?php
   $count = 0;
     if ($result->num_rows >0) {
@@ -287,7 +287,7 @@ $result = $conn->query($sql);
             $images = json_decode($row['images'], true);
             $image = $images[0];
 
-            if($count >= 7){
+            if($count >= 4){
               break;
             }
     ?>

@@ -17,6 +17,48 @@ $result = $conn->query($sql);
 
 <body class="bg-gray-50">
 
+<header class="bg-white border-b border-gray-200">
+  <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+    <!-- Left Section -->
+    <div class="flex items-center">
+      <span class="text-yellow-600 font-semibold text-sm mr-4">HOTLINE: +94 710 777 666</span>
+      <div class="flex space-x-4">
+        <a href="#" class="text-yellow-600 hover:text-yellow-800">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="text-yellow-600 hover:text-yellow-800">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="text-yellow-600 hover:text-yellow-800">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#" class="text-yellow-600 hover:text-yellow-800">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Center Section -->
+    <div>
+      <img src="logo.png" alt="Logo" class="h-12">
+    </div>
+
+    <!-- Right Section -->
+    <div class="flex items-center space-x-6">
+      <a href="#apartments" class="text-blue-700 hover:underline">Apartments</a>
+      <a href="#about-us" class="text-blue-700 hover:underline">About Us</a>
+      <a href="#contact-us" class="text-blue-700 hover:underline">Contact Us</a>
+      <a href="#lands-houses" class="text-blue-700 hover:underline">Lands & Houses</a>
+      <div>
+        <button class="flex items-center text-yellow-600 hover:text-yellow-800">
+          <i class="fas fa-bars mr-1"></i> MENU
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+
    <!-- Outer Container -->
    <div class="flex flex-col items-center bg-white h-screen">
     <!-- Auto-Sliding Section -->
@@ -256,7 +298,7 @@ $result = $conn->query($sql);
           COMPLETED PROJECTS
         </h1>
   <!-- Grid Layout -->
-  <div class="grid md:grid-cols-3 grid-cols-2 gap-0 w-full h-screen  object-cover filter brightness-75 contrast-80 ">
+  <div class="grid md:grid-cols-3 grid-cols-2 gap-0 w-full h-[400px]  object-cover filter brightness-75 contrast-80 ">
   <?php
   $count = 0;
     if ($result->num_rows >0) {
@@ -274,7 +316,7 @@ $result = $conn->query($sql);
               $image_path = "/trident/public/default-image.webp"; 
           }
 
-            if($count >= 7){
+            if($count >= 4){
               break;
             }
     ?>
@@ -682,6 +724,24 @@ $result = $conn->query($sql);
     </div>
   </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

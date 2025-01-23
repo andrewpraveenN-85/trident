@@ -15,13 +15,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if ($username === $valid_username && $password === $valid_password) {
         $_SESSION['role'] = 'admin'; 
         // Redirect to the admin dashboard
-        header("Location: /trident/public/admin/index.php");
+        header("Location: index.php");
         exit(); // Ensure no further code is executed
     } else {
         // Output JavaScript alert
         echo "<script>alert('Invalid username or password.');</script>";
         // Redirect back to the login page (optional)
-        echo "<script>window.location.href = 'http://localhost/trident/public/admin/login.php';</script>";
+        echo "<script>window.location.href = 'login.php';</script>";
         exit();
     }
 }

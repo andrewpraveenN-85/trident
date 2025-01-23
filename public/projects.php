@@ -14,7 +14,7 @@ if ($project_id) {
         $project_name = htmlspecialchars($project['project_name']);
         $locations = htmlspecialchars($project['locations']);
         $images = json_decode($project['images'], true);
-        $base_image_path = '/trident/public/upcomings/';
+        $base_image_path = 'upcomings/';
 
         if (!empty($images) && is_array($images)) {
             $images = array_map(function ($image) use ($base_image_path) {

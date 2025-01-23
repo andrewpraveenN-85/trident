@@ -19,9 +19,7 @@ if (isset($_POST["upload"])) {
             $target_dir = "../upcomings/"; 
             $target_file = $target_dir . $file_name;
 
-            if (!file_exists($target_dir)) {
-                mkdir($target_dir, 0755, true); 
-            }
+            
 
             if (move_uploaded_file($tmp_name, $target_file)) {
                 $uploaded_images[] = $target_file;

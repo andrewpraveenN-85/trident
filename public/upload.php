@@ -62,7 +62,7 @@ $conn->close();
                     $first_image = $images[0] ?? 'default-image.webp'; 
                     if (is_array($images) && !empty($images)) {
                         $first_image = $images[0];
-                        $image_path = "/trident/public/upcomings/" . htmlspecialchars(basename($first_image));
+                        $image_path = "upcomings/" . htmlspecialchars(basename($first_image));
                     } else {
                         $image_path = "/trident/public/default-image.webp"; // Placeholder image
                     }

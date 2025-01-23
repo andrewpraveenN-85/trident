@@ -269,7 +269,7 @@ $result = $conn->query($sql);
             $images = json_decode($row['images'], true);
             if (is_array($images) && !empty($images)) {
               $first_image = $images[0];
-              $image_path = "/trident/public/completes/" . htmlspecialchars(basename($first_image));
+              $image_path = "completes/" . htmlspecialchars(basename($first_image));
           } else {
               $image_path = "/trident/public/default-image.webp"; 
           }

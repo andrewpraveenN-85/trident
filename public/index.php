@@ -25,19 +25,19 @@ $result = $conn->query($sql);
 
 <header class="bg-white shadow "></header>
 
-  <div class="container bg-white mx-auto px-4 py-3 flex items-center justify-between fixed z-10">
+  <div class=" bg-white mx-auto px-4 py-3 flex items-center justify-arround fixed z-10 w-full">
 
 
  <!-- Left Section: Hotline and Social Media -->
   
-<a href="https://wa.me/94710777666"class="bg-white flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4">
+<a href="https://wa.me/94710777666"class="bg-white flex flex-col sm:flex-row items-center space-y-2 w-full sm:space-y-0 sm:space-x-4">
   <span class="text-red-500 font-semibold text-sm uppercase">Contact: +94 71 426 6679</span>
   </a>
   
 
 
  <!-- Right Section: Navigation Menu -->
- <nav class="flex space-x-6 hidden md:flex">
+ <nav class="flex space-x-6 hidden md:flex w-full">
         <a href="#section2" class="text-[#2D2E74] hover:underline font-medium">About Us</a>
         <a href="#section3" class="text-[#2D2E74] hover:underline font-medium">Completed Projects</a>
         <a href="#section4" class="text-[#2D2E74] hover:underline font-medium">Upcoming Projects</a>

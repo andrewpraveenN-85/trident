@@ -131,7 +131,7 @@ $result = $conn->query($sql);
         <li class="fade-slide"><a href="index.php" class="hover:underline">Home</a></li>
         <li class="fade-slide"><a href="Complet2.php" class="hover:underline">Completed Projects</a></li>
         <li class="fade-slide"><a href="upload.php" class="hover:underline">Upcoming Projects</a></li>
-        <li class="fade-slide"><a href="pantry.html" class="hover:underline">Pantry Designs</a></li>
+        <li class="fade-slide"><a href="vb1.mp4" class="hover:underline">Demo Reel</a></li>
         
       </ul>
     </div>
@@ -188,8 +188,8 @@ $result = $conn->query($sql);
       <!-- Carousel -->
       <div id="sectionCarousel" class="flex transition-transform duration-700">
         <!-- Section 1 -->
-        <div class="flex flex-col items-center justify-center w-full h-screen flex-shrink-0 bg-white text-white">
-          <img src="LOGO.webp" alt="Center Image" class="w-screen h-96 mb-4 object-contain" />
+        <div class="flex flex-col items-center justify-center w-full h-screen flex-shrink-0 bg-white text-white " >
+          <img src="LOGO.webp" alt="Center Image" class="w-screen h-96 mb-4 object-contain z-10"/>
           
                 <!-- Arrow Down -->
                 <div id="scroll-button" class="mt-8">
@@ -328,13 +328,13 @@ $result = $conn->query($sql);
 
 
 
-  <section id="trident-residencies" class="min-h-screen bg-white flex flex-col items-center justify-center px-4 md:px-6 py-8 md:py-16">
+  <section id="section2" class="min-h-screen bg-white flex flex-col items-center justify-center px-4 md:px-6 py-8 md:py-16">
   <div class="flex flex-col lg:flex-row items-center lg:space-x-12 max-w-7xl w-full">
     
     <!-- Left Image with Text Overlay -->
     <div class="relative w-full lg:w-1/2">
       <img
-        src="7788.webp"
+        src="7788i.JPEG.jpg"
         alt="Building"
         class="rounded-lg object-cover w-full h-auto"
       >
@@ -369,7 +369,7 @@ $result = $conn->query($sql);
   </div>
 
 
-  <section id="section2" class="bg-cover bg-center text-white h-[90vh] px-4 py-8 md:py-12" style="background-image: url('vision.webp');">
+  <section class="bg-cover bg-center text-white h-[90vh] px-4 py-8 md:py-12" style="background-image: url('vision.webp');">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <div class="max-w-4xl mx-auto text-center p-4 md:p-8" style="font-family: 'Lora', serif;">
       <!-- Title -->
@@ -640,6 +640,7 @@ $result = $conn->query($sql);
 
 
       <!-- video part -->
+
       <div class="flex justify-center items-center bg-white py-0">
   <div class="max-w-4xl w-full">
     <video 
@@ -735,14 +736,7 @@ $result = $conn->query($sql);
     <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
       <img src="1.7.webp" alt="Client Logo 7" class="h-16 w-auto object-contain">
     </div>
-    <!-- Logo 8 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="1.8.webp" alt="Client Logo 8" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 9 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="1.9.webp" alt="Client Logo 9" class="h-16 w-auto object-contain">
-    </div>
+    
     <!-- Logo 10 -->
     <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
       <img src="1.10.webp" alt="Client Logo 10" class="h-16 w-auto object-contain">
@@ -751,21 +745,15 @@ $result = $conn->query($sql);
     <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
       <img src="1.11.webp" alt="Client Logo 11" class="h-16 w-auto object-contain">
     </div>
-    <!-- Logo 12 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="1.12.webp" alt="Client Logo 12" class="h-16 w-auto object-contain">
-    </div>
+    
     <!-- Logo 13 -->
     <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
       <img src="1.13.webp" alt="Client Logo 13" class="h-16 w-auto object-contain">
     </div>
-    <!-- Logo 14 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="1.14.webp" alt="Client Logo 14" class="h-16 w-auto object-contain">
-    </div>
+   
     <!-- Logo 15 -->
     <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="1.15.webp" alt="Client Logo 15" class="h-16 w-auto object-contain">
+      <img src="1.14.webp" alt="Client Logo 15" class="h-16 w-auto object-contain">
     </div>
     <!-- Logo 16 -->
     <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
@@ -779,33 +767,14 @@ $result = $conn->query($sql);
     <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
       <img src="1.18.webp" alt="Client Logo 18" class="h-16 w-auto object-contain">
     </div>
-    <!-- Logo 19 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="1.19.webp" alt="Client Logo 19" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 20 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="1.20.webp" alt="Client Logo 20" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 21 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="1.21.webp" alt="Client Logo 21" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 22 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="1.22.webp" alt="Client Logo 22" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 23 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="1.23.webp" alt="Client Logo 23" class="h-16 w-auto object-contain">
-    </div>
+    
     <!-- Logo 24 -->
     <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
       <img src="1.24.webp" alt="Client Logo 24" class="h-16 w-auto object-contain">
     </div>
-    <!-- Logo 14 -->
+    <!-- Logo 20 -->
     <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="1.14.webp" alt="Client Logo 14" class="h-16 w-auto object-contain">
+      <img src="1.19.webp" alt="Client Logo 20" class="h-16 w-auto object-contain">
     </div>
     <!-- Logo 15 -->
     <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
@@ -831,77 +800,119 @@ $result = $conn->query($sql);
     <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
       <img src="3.6.webp" alt="Client Logo 20" class="h-16 w-auto object-contain">
     </div>
-    <!-- Logo 21 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="2.3.webp" alt="Client Logo 21" class="h-16 w-auto object-contain">
-    </div>
-    
+   
     
   </div>
 </div>
 
 
 <section id="section6">
+  <footer class="bg-white py-10 text-gray-700">
+    <div class="container mx-auto px-6">
+      <!-- Top Section: Contact Information -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Shan Group of Companies -->
+        <div class="text-center md:text-left">
+          <p class="font-semibold text-lg text-gray-800">Shan Group of Companies</p>
+          <p class="text-sm text-gray-700">
+            Address: The Metropolis Tower, Office 204/205, 2nd Floor, Business Bay, Dubai, United Arab Emirates.<br>
+            <a href="https://www.shangroup.org" class="text-blue-600 hover:text-blue-800">www.shangroup.org</a>
+          </p>
+        </div>
 
-<footer class="bg-white py-10 text-gray-700">
-  <div class="container mx-auto px-6">
-    <!-- Top Section: Contact Information -->
-    <div class="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
-      <!-- Left Column: Address and Email -->
-      <div class="text-center md:text-left">
-        <p class="font-semibold text-lg text-gray-800">Get in Touch</p>
-        <p class="text-sm text-gray-700">
-          Trident Residencies (Pvt) Ltd.<br>
-          149, Galle Road, Dehiwala.<br>
-          <a href="mailto:trident@assiduaint.com" class="text-blue-600 hover:text-blue-800">
-            trident@assiduaint.com
-          </a>
-        </p>
-      </div>
+        <!-- Shan Global Employment Services -->
+        <div class="text-center md:text-left">
+          <p class="font-semibold text-lg text-gray-800">Shan Global Employment Services LLC</p>
+          <p class="text-sm text-gray-700">
+            Location: Dubai, UAE.<br>
+            <a href="https://www.shandxb.com" class="text-blue-600 hover:text-blue-800">www.shandxb.com</a><br>
+            Phone: +971 4580 5678
+          </p>
+        </div>
 
-      <!-- Middle Column: Contact Numbers -->
-      <div class="text-center">
-        <p class="font-semibold text-lg text-gray-800">Contact Us</p>
-        <div class="flex flex-col space-y-3 text-sm">
-          <a href="https://wa.me/94710777666" class="flex items-center justify-center space-x-2 hover:text-green-500">
-            <i class="fab fa-whatsapp text-green-600 fa-lg"></i>
-            <span>+94 71 426 6679 - Mr. Prabu (Director)</span>
-          </a>
-          <a href="https://wa.me/94710777667" class="flex items-center justify-center space-x-2 hover:text-green-500">
-            <i class="fab fa-whatsapp text-green-600 fa-lg"></i>
-            <span>+94 77 321 9679 - Mr. Pathum (Project Engineer)</span>
-          </a>
+        <!-- Shan Global Technical Services -->
+        <div class="text-center md:text-left">
+          <p class="font-semibold text-lg text-gray-800">Shan Global Technical Services LLC</p>
+          <p class="text-sm text-gray-700">
+            Location: Dubai, UAE.<br>
+            <a href="https://www.shandxb.com" class="text-blue-600 hover:text-blue-800">www.shandxb.com</a><br>
+            Phone: +971 4580 5678
+          </p>
+        </div>
+
+        <!-- Assidua International -->
+        <div class="text-center md:text-left">
+          <p class="font-semibold text-lg text-gray-800">Assidua International (Pvt) Ltd.</p>
+          <p class="text-sm text-gray-700">
+            Address: 149, Galle Road, Dehiwala.<br>
+            Phone: 0112-735098 / 070 615 2999
+          </p>
         </div>
       </div>
 
-      <!-- Right Column: Social Media Links -->
-      <div class="text-center md:text-right">
-        <p class="font-semibold text-lg text-gray-800">Follow Us</p>
-        <div class="flex justify-center md:justify-end space-x-4">
-          <a href="#" class="hover:text-blue-600">
-            <i class="fab fa-facebook text-blue-600 fa-lg"></i>
-          </a>
-          <a href="#" class="hover:text-sky-500">
-            <i class="fab fa-twitter text-sky-500 fa-lg"></i>
-          </a>
-          <a href="#" class="hover:text-pink-500">
-            <i class="fab fa-instagram text-pink-500 fa-lg"></i>
-          </a>
+      <!-- Bottom Section: Original Footer -->
+      <div class="mt-12">
+        <!-- Divider -->
+        <hr class="border-gray-300 mb-8">
+        <div class="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
+          <!-- Left Column: Address and Email -->
+          <div class="text-center md:text-left">
+            <p class="font-semibold text-lg text-gray-800">Get in Touch</p>
+            <p class="text-sm text-gray-700">
+              Trident Residencies (Pvt) Ltd.<br>
+              149, Galle Road, Dehiwala.<br>
+              <a href="mailto:trident@assiduaint.com" class="text-blue-600 hover:text-blue-800">
+                trident@assiduaint.com
+              </a>
+            </p>
+          </div>
+
+          <!-- Middle Column: Contact Numbers -->
+          <div class="text-center">
+            <p class="font-semibold text-lg text-gray-800">Contact Us</p>
+            <div class="flex flex-col space-y-3 text-sm">
+            <a href="https://wa.me/94710777667" class="flex items-center justify-center space-x-2 hover:text-green-500">
+                <i class="fab fa-whatsapp text-green-600 fa-lg"></i>
+                <span>+94 77 321 9679 - (Project Manager)</span>
+              </a>
+              <a href="https://wa.me/94710777666" class="flex items-center justify-center space-x-2 hover:text-green-500">
+                <i class="fab fa-whatsapp text-green-600 fa-lg"></i>
+                <span>+94 71 426 6679 - (Director)</span>
+              </a>
+              
+            </div>
+          </div>
+
+          <!-- Right Column: Social Media Links -->
+          <div class="text-center md:text-right">
+            <p class="font-semibold text-lg text-gray-800">Follow Us</p>
+            <div class="flex justify-center md:justify-end space-x-4">
+              <a href="#" class="hover:text-blue-600">
+                <i class="fab fa-facebook text-blue-600 fa-lg"></i>
+              </a>
+              <a href="#" class="hover:text-sky-500">
+                <i class="fab fa-twitter text-sky-500 fa-lg"></i>
+              </a>
+              <a href="#" class="hover:text-pink-500">
+                <i class="fab fa-instagram text-pink-500 fa-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Legal Links -->
+        <div class="mt-8 border-t border-gray-300 pt-6 flex flex-col md:flex-row justify-between items-center text-sm">
+          <p class="text-gray-500">© 2025 CloudJay Software. All rights reserved.</p>
+          <div class="flex space-x-6">
+            <a href="#" class="text-gray-600 hover:text-gray-800">Terms of Services</a>
+            <a href="#" class="text-gray-600 hover:text-gray-800">Privacy Policy</a>
+          </div>
         </div>
       </div>
     </div>
-
-    <!-- Bottom Section: Legal Links -->
-    <div class="mt-8 border-t border-gray-300 pt-6 flex flex-col md:flex-row justify-between items-center text-sm">
-      <p class="text-gray-500">© 2025 CloudJay Software. All rights reserved.</p>
-      <div class="flex space-x-6">
-        <a href="#" class="text-gray-600 hover:text-gray-800">Terms of Services</a>
-        <a href="#" class="text-gray-600 hover:text-gray-800">Privacy Policy</a>
-      </div>
-    </div>
-  </div>
-</footer>
+  </footer>
 </section>
+
 
 
       

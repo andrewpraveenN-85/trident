@@ -17,6 +17,170 @@ $result = $conn->query($sql);
 
 <body class="bg-gray-50">
 
+
+
+
+
+
+
+<header class="bg-white shadow "></header>
+
+  <div class="container bg-white mx-auto px-4 py-3 flex items-center justify-between fixed z-10">
+
+
+ <!-- Left Section: Hotline and Social Media -->
+  
+<a href="https://wa.me/94710777666"class="bg-white flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4">
+  <span class="text-red-500 font-semibold text-sm uppercase">Contact: +94 71 426 6679</span>
+  </a>
+  
+
+
+ <!-- Right Section: Navigation Menu -->
+ <nav class="flex space-x-6 hidden md:flex">
+        <a href="#section2" class="text-[#2D2E74] hover:underline font-medium">About Us</a>
+        <a href="#section3" class="text-[#2D2E74] hover:underline font-medium">Completed Projects</a>
+        <a href="#section4" class="text-[#2D2E74] hover:underline font-medium">Upcoming Projects</a>
+        <a href="#section5" class="text-[#2D2E74] hover:underline font-medium">Pantry Designs</a>
+        <a href="#section6" class="text-[#2D2E74] hover:underline font-medium">Contact Us</a>
+      </nav>
+      <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+<!-- Keyframes and Animation Styles -->
+<style>
+  /* Keyframes for fade and slide-in animation */
+  @keyframes fadeInSlide {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Apply animation with delay to each link */
+  .fade-slide {
+    animation: fadeInSlide 0.6s ease-out forwards;
+    opacity: 0; /* Ensure items are hidden before animation starts */
+  }
+
+  .fade-slide:nth-child(1) { animation-delay: 0.1s; }
+  .fade-slide:nth-child(2) { animation-delay: 0.2s; }
+  .fade-slide:nth-child(3) { animation-delay: 0.3s; }
+  .fade-slide:nth-child(4) { animation-delay: 0.4s; }
+</style>
+
+<!-- JavaScript to Trigger Animation (Optional) -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll(".fade-slide");
+    links.forEach(link => {
+      // Apply animation class when the page loads or when the menu becomes visible
+      link.classList.add("fade-slide");
+    });
+  });
+</script>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Keyframes for fade and slide-in animation */
+    @keyframes fadeInSlide {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    /* Apply animation with delay to each item */
+    .fade-slide {
+      animation: fadeInSlide 0.6s ease-out forwards;
+    }
+    .fade-slide:nth-child(1) { animation-delay: 0.1s; }
+    .fade-slide:nth-child(2) { animation-delay: 0.2s; }
+    .fade-slide:nth-child(3) { animation-delay: 0.3s; }
+    .fade-slide:nth-child(4) { animation-delay: 0.4s; }
+    .fade-slide:nth-child(5) { animation-delay: 0.5s; }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Wrapped Menu Component in a Div -->
+  <div class="menu-component">
+    <!-- Menu Button -->
+    <button id="menuButton" class="flex items-center text-[#ED1C24] hover:text-[#000000] font-medium mt-2 ml-4">
+      <i class="fas fa-bars mr-1"></i> MENU
+    </button>
+
+    <!-- Full-Screen Menu -->
+    <div id="menuOverlay" class="fixed inset-0 bg-white bg-opacity-95 hidden z-50 flex items-center justify-center">
+      <!-- Close Button -->
+      <button id="closeMenu" class="absolute top-5 right-5 text-gray-600 text-2xl hover:text-gray-800">
+        &times;
+      </button>
+      <!-- Menu Items -->
+      <ul class="text-center space-y-6 text-2xl text-[#2D2E74] font-semibold">
+        <li class="fade-slide"><a href="index.php" class="hover:underline">Home</a></li>
+        <li class="fade-slide"><a href="Complet2.php" class="hover:underline">Completed Projects</a></li>
+        <li class="fade-slide"><a href="upload.php" class="hover:underline">Upcoming Projects</a></li>
+        <li class="fade-slide"><a href="pantry.html" class="hover:underline">Pantry Designs</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById("menuButton").addEventListener("click", function () {
+      const overlay = document.getElementById("menuOverlay");
+      overlay.classList.remove("hidden");
+      setTimeout(() => overlay.classList.add("flex"), 0); // Add flex for alignment after removing hidden
+    });
+
+    document.getElementById("closeMenu").addEventListener("click", function () {
+      const overlay = document.getElementById("menuOverlay");
+      overlay.classList.add("hidden");
+      overlay.classList.remove("flex");
+    });
+  </script>
+</body>
+
+
+
+
+
+
+
+
+
+
+    </nav>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    <!-- Outer Container -->
    <div class="flex flex-col items-center bg-white h-screen">
     <!-- Auto-Sliding Section -->
@@ -49,7 +213,7 @@ $result = $conn->query($sql);
         </div>
         
         <!-- Section 2 -->
-        <div class=" flex-col items-center justify-center w-full  h-screen flex flex-shrink-0 bg-white text-white ">
+        <div  class=" flex-col items-center justify-center w-full  h-screen flex flex-shrink-0 bg-white text-white ">
           <div class="relative flex items-start justify-start w-full h-screen bg-white text-white">
             <!-- Background Image -->
             <img src="3526t.webp" alt="Background Image" class="hidden md:flex absolute inset-0 w-full h-full object-cover z-0 filter brightness-75 contrast-80" />
@@ -63,7 +227,7 @@ $result = $conn->query($sql);
                 Call Us
               </button>
               <p class="text-3xl font-semibold text-gray-800">
-                077 - 3002345 / 011 - 2243432
+                077-3219679 / 071-4266679
               </p>
             </div>
           </div>
@@ -159,7 +323,7 @@ $result = $conn->query($sql);
 
 
   </div>
-
+  
 
 
 
@@ -205,7 +369,7 @@ $result = $conn->query($sql);
   </div>
 
 
-  <section class="bg-cover bg-center text-white h-[90vh] px-4 py-8 md:py-12" style="background-image: url('vision.webp');">
+  <section id="section2" class="bg-cover bg-center text-white h-[90vh] px-4 py-8 md:py-12" style="background-image: url('vision.webp');">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <div class="max-w-4xl mx-auto text-center p-4 md:p-8" style="font-family: 'Lora', serif;">
       <!-- Title -->
@@ -248,7 +412,7 @@ $result = $conn->query($sql);
 
 
   
-  <section class="mt-8 w-full">
+  <section id="section3" class="mt-8 w-full">
   <h1
           class="text-4xl md:text-5xl font-bold text-center text-indigo-900 mb-8 "
           style="font-family: 'Lora', serif; font-weight: 700;"
@@ -323,7 +487,7 @@ $result = $conn->query($sql);
       <!-- Include Lora Font from Google Fonts -->
       <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
 
-      <section class="flex flex-col items-center justify-start md:pt-24 bg-white">
+      <section id="section4"class="flex flex-col items-center justify-start md:pt-24 bg-white">
         <!-- Upcoming Projects Title -->
         <h1
           class="text-4xl md:text-5xl font-bold text-indigo-900 mb-8 text-center"
@@ -418,7 +582,7 @@ $result = $conn->query($sql);
 
 
 
-
+      <section id="section5">
     <div class="p-14 border border-white rounded-lg max-w-7xl mx-auto h-screen">
   <!-- Container -->
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -461,7 +625,7 @@ $result = $conn->query($sql);
   </div>
 </div>
 
-
+  </section>
 
 
 
@@ -539,7 +703,7 @@ $result = $conn->query($sql);
 <!-- Logo part -->
       <div class="w-full flex flex-col justify-center items-center montserrat space-y-6 bg-white py-20">
   <!-- Title -->
-  <p class="text-4xl font-bold text-indigo-900 mb-10"style="font-family: 'Lora', serif;">Our Clientele</p>
+  <p class="text-4xl font-bold text-indigo-900 mb-10"style="font-family: 'Lora', serif;">Our Suppliers</p>
 
   <!-- Logo Grid -->
   <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-6 w-full px-8 md:px-32">
@@ -672,52 +836,73 @@ $result = $conn->query($sql);
       <img src="2.3.webp" alt="Client Logo 21" class="h-16 w-auto object-contain">
     </div>
     
-    <!-- Logo 23 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="1.23.webp" alt="Client Logo 23" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 24 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="1.24.webp" alt="Client Logo 24" class="h-16 w-auto object-contain">
-    </div>
+    
   </div>
 </div>
 
 
+<section id="section6">
 
+<footer class="bg-white py-10 text-gray-700">
+  <div class="container mx-auto px-6">
+    <!-- Top Section: Contact Information -->
+    <div class="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
+      <!-- Left Column: Address and Email -->
+      <div class="text-center md:text-left">
+        <p class="font-semibold text-lg text-gray-800">Get in Touch</p>
+        <p class="text-sm text-gray-700">
+          Trident Residencies (Pvt) Ltd.<br>
+          149, Galle Road, Dehiwala.<br>
+          <a href="mailto:trident@assiduaint.com" class="text-blue-600 hover:text-blue-800">
+            trident@assiduaint.com
+          </a>
+        </p>
+      </div>
 
+      <!-- Middle Column: Contact Numbers -->
+      <div class="text-center">
+        <p class="font-semibold text-lg text-gray-800">Contact Us</p>
+        <div class="flex flex-col space-y-3 text-sm">
+          <a href="https://wa.me/94710777666" class="flex items-center justify-center space-x-2 hover:text-green-500">
+            <i class="fab fa-whatsapp text-green-600 fa-lg"></i>
+            <span>+94 71 426 6679 - Mr. Prabu (Director)</span>
+          </a>
+          <a href="https://wa.me/94710777667" class="flex items-center justify-center space-x-2 hover:text-green-500">
+            <i class="fab fa-whatsapp text-green-600 fa-lg"></i>
+            <span>+94 77 321 9679 - Mr. Pathum (Project Engineer)</span>
+          </a>
+        </div>
+      </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<footer class="bg-gray-100 py-4 border-t border-gray-300 font-bold">
-  <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
-    <!-- Left Section -->
-    <div class="text-sm text-gray-600 text-center md:text-left mb-2 md:mb-0">
-      © 2025 CloudJay Software. All rights reserved.
+      <!-- Right Column: Social Media Links -->
+      <div class="text-center md:text-right">
+        <p class="font-semibold text-lg text-gray-800">Follow Us</p>
+        <div class="flex justify-center md:justify-end space-x-4">
+          <a href="#" class="hover:text-blue-600">
+            <i class="fab fa-facebook text-blue-600 fa-lg"></i>
+          </a>
+          <a href="#" class="hover:text-sky-500">
+            <i class="fab fa-twitter text-sky-500 fa-lg"></i>
+          </a>
+          <a href="#" class="hover:text-pink-500">
+            <i class="fab fa-instagram text-pink-500 fa-lg"></i>
+          </a>
+        </div>
+      </div>
     </div>
 
-    <!-- Right Section -->
-    <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 text-center md:text-left">
-      <a href="#" class="text-sm text-gray-600 hover:text-gray-800">Terms of Services</a>
-      <a href="#" class="text-sm text-gray-600 hover:text-gray-800">Privacy Policy</a>
+    <!-- Bottom Section: Legal Links -->
+    <div class="mt-8 border-t border-gray-300 pt-6 flex flex-col md:flex-row justify-between items-center text-sm">
+      <p class="text-gray-500">© 2025 CloudJay Software. All rights reserved.</p>
+      <div class="flex space-x-6">
+        <a href="#" class="text-gray-600 hover:text-gray-800">Terms of Services</a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">Privacy Policy</a>
+      </div>
     </div>
   </div>
 </footer>
+</section>
+
 
       
     

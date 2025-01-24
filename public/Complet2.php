@@ -35,6 +35,15 @@ $conn->close();
     </style>
 </head>
 <body class="bg-white">
+   <!-- Back Arrow -->
+<div class="flex justify-start p-4">
+  <a href="index.php" class="flex items-center text-red-500 hover:text-red-700 text-base sm:text-lg md:text-xl font-medium">
+    <i class="fas fa-arrow-left mr-2"></i>
+    <span>Back</span>
+  </a>
+</div>
+
+
     <!-- Main Section -->
     <section class="container mx-auto px-4 sm:px-6 py-6 text-center">
         <!-- Heading -->
@@ -88,6 +97,8 @@ $conn->close();
 
         
     </section>
+
+    
 
     <!-- Modal -->
     <div id="modal" class="fixed inset-0 bg-gray-900 bg-opacity-80 flex items-center justify-center px-4">

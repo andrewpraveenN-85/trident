@@ -23,6 +23,19 @@ $result = $conn->query($sql);
 
 <body class="bg-gray-50">
 
+
+
+
+
+
+
+
+
+
+
+
+
+
    <!-- Outer Container -->
    <div class="flex flex-col items-center bg-white h-screen">
    <a
@@ -182,36 +195,7 @@ $result = $conn->query($sql);
 
 
 
-  <section id="trident-residencies" class="min-h-screen bg-white flex flex-col items-center justify-center px-4 md:px-6 py-8 md:py-16">
-  <div class="flex flex-col lg:flex-row items-center lg:space-x-12 max-w-7xl w-full">
-    
-    <!-- Left Image with Text Overlay -->
-    <div class="relative w-full lg:w-1/2">
-      <img
-        src="../7788.webp"
-        alt="Building"
-        class="rounded-lg object-cover w-full h-auto"
-      >
-    </div>
-
-    <!-- Right Text Section -->
-    <div class="mt-8 md:mt-12 lg:mt-0 lg:w-1/2">
-      <h1 class="text-2xl md:text-3xl lg:text-4xl font-serif font-bold mb-6 text-black text-center lg:text-left" style="font-family: 'Lora', serif;">
-        Welcome to Trident Residencies Pvt Ltd
-      </h1>
-      <p class="text-black text-base md:text-lg font-serif leading-6 md:leading-7 mb-4 text-center lg:text-left" style="font-family: 'Lora', serif;">
-        Welcome to <strong>Trident Residencies</strong>, where your dream home becomes reality. Founded in 2017 by visionary entrepreneur Mr. Shan B, we craft homes that blend modern design with natural harmony.
-      </p>
-      <p class="text-black text-base md:text-lg font-serif leading-6 md:leading-7 mb-4 text-center lg:text-left" style="font-family: 'Lora', serif;">
-        Guided by our promise, <strong>"Your Vision, Our Design,"</strong> we create spaces that redefine modern living with exceptional quality and thoughtful innovation.
-      </p>
-      <p class="text-black text-base md:text-lg font-serif leading-6 md:leading-7 text-center lg:text-left" style="font-family: 'Lora', serif;">
-        Discover a home that’s more than a place to live—it’s a reflection of your aspirations. <strong>Trident Residencies: Where dreams come home.</strong>
-      </p>
-    </div>
-
-  </div>
-</section>
+ 
 
 <style>
   html {
@@ -223,43 +207,7 @@ $result = $conn->query($sql);
   </div>
 
 
-  <section class="bg-cover bg-center text-white h-[90vh] px-4 py-8 md:py-12" style="background-image: url('../vision.webp');">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
-    <div class="max-w-4xl mx-auto text-center p-4 md:p-8" style="font-family: 'Lora', serif;">
-      <!-- Title -->
-      <h1 class="text-3xl md:text-6xl font-bold uppercase mb-6 md:mb-8">
-        Our Vision & Mission
-      </h1>
-      
-      <!-- Our Vision Section -->
-      <div class="mb-8">
-        <h2 class="text-2xl md:text-4xl font-semibold mb-4">
-          Our Vision
-        </h2>
-        <p class="text-base md:text-2xl leading-relaxed">
-          To create homes that inspire, combining modern design, natural harmony, and lasting quality.
-        </p>
-      </div>
-      
-      <!-- White Line -->
-      <div class="mb-8 mt-6">
-        <img src="../line.webp" alt="divider line" class="mx-auto w-1/2 h-1">
-      </div>
-      
-      <!-- Our Mission Section -->
-      <div>
-        <h2 class="text-2xl md:text-4xl font-semibold mb-4 mt-6">
-          Our Mission
-        </h2>
-        <p class="text-base md:text-2xl leading-relaxed mb-4">
-          We bring your dream home to life with thoughtful design,
-        </p>
-        <p class="text-base md:text-2xl leading-relaxed">
-           unmatched quality, and a touch of elegance. At Trident Residencies, we don’t just build houses—we create spaces where life feels complete.
-        </p>
-      </div>
-    </div>
-  </section>
+  
   
 
 
@@ -427,102 +375,6 @@ $result = $conn->query($sql);
 
 
 
-      <div class="p-14 border border-white rounded-lg max-w-7xl mx-auto h-screen">
-  <!-- Container -->
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-    <!-- Left Side: Text Section -->
-    <div class="flex flex-col justify-center">
-      <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-brown-700 text-[#674636]"style="font-family: 'Lora', serif;">PANTRY DESIGNS</h2>
-      <p class="text-lg md:text-xl italic bold text-brown-600 mt-2 text-black"style="font-family: 'Lora', serif;">Discover Your Dream Pantry</p>
-      <p class="text-brown-500 text-sm md:text-base lg:text-lg mt-4 text-[#674636]"style="font-family: 'Lora', serif;">
-        Transform your kitchen with our stunning pantry designs that blend functionality and style.
-        Whether you’re looking for a modern, rustic, or classic touch, we have the perfect solutions for you.
-      </p>
-      <button 
-        id="pantryButtons" 
-        class="px-6 py-3 w-48 mt-10 bg-brown-700 text-white rounded-3xl shadow-lg hover:bg-[#674636] animate-bounce transition duration-300"
-        onclick="navigateToPantry()">
-        Pantry Design
-      </button>
-    </div>
-
-    <!-- Right Side: Image Grid -->
-    <div class="grid grid-cols-2 grid-rows-2 gap-4">
-      <!-- Large Image -->
-      <img
-        src="../p17.webp"
-        alt="Pantry Design 1"
-        class="col-span-2 row-span-1 w-[800px] h-[300px] rounded-lg shadow-md"
-      />
-      <!-- Smaller Images -->
-      <img
-        src="../p13.webp"
-        alt="Pantry Design 2"
-        class="rounded-lg shadow-md"
-      />
-      <img
-        src="../p14.webp"
-        alt="Pantry Design 3"
-        class="rounded-lg shadow-md"
-      />
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-      <!-- video part -->
-      <div class="flex justify-center items-center bg-white py-10">
-  <div class="max-w-4xl w-full">
-    <video 
-      id="dynamicVideo" 
-      controls 
-      class="w-full h-auto mt-24 rounded-lg shadow-lg transition-transform duration-500"
-    >
-      <source src="../vb1.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-    
-    
-    
-  </div>
-</div>
-
-<script>
-  const video = document.getElementById('dynamicVideo');
-
-  // Change video playing mode dynamically
-  video.addEventListener('play', () => {
-    video.style.filter = "grayscale(0%)"; // Normal mode when playing
-    video.style.transform = "scale(1.1)"; // Add a slight zoom-in effect
-    video.volume = 0.5; // Set a medium volume level
-  });
-
-  video.addEventListener('pause', () => {
-    video.style.filter = "grayscale(100%)"; // Grayscale effect when paused
-    video.style.transform = "scale(1)"; // Reset zoom
-  });
-
-  // Redirect to Pantry Design HTML file
-  function navigateToPantry() {
-    window.location.href = "./pantry.html"; // Ensure the correct relative path
-  }
-</script>
-
-<style>
-  /* Custom Tailwind CSS Brown Color */
-  .bg-brown-700 {
-    background-color: #8B4513;
-  }
-  .hover\:bg-brown-800:hover {
-    background-color: #5A3210;
-  }
-</style>
 
 
 
@@ -537,171 +389,14 @@ $result = $conn->query($sql);
 
 
 
-<!-- Logo part -->
-      <div class="w-full flex flex-col justify-center items-center montserrat space-y-6 bg-white py-20">
-  <!-- Title -->
-  <p class="text-4xl font-bold text-indigo-900 mb-10"style="font-family: 'Lora', serif;">Our Clientele</p>
 
-  <!-- Logo Grid -->
-  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-6 w-full px-8 md:px-32">
-    <!-- Logo 1 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../1.1.webp" alt="Client Logo 1" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 2 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../1.2.webp" alt="Client Logo 2" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 3 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../1.3.webp" alt="Client Logo 3" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 4 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../1.4.webp" alt="Client Logo 4" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 5 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../1.5.webp" alt="Client Logo 5" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 6 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../1.34.webp" alt="Client Logo 6" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 7 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../1.7.webp" alt="Client Logo 7" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 8 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../1.8.webp" alt="Client Logo 8" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 9 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../1.9.webp" alt="Client Logo 9" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 10 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../1.10.webp" alt="Client Logo 10" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 11 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../1.11.webp" alt="Client Logo 11" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 12 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../1.12.webp" alt="Client Logo 12" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 13 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../1.13.webp" alt="Client Logo 13" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 14 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../1.14.webp" alt="Client Logo 14" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 15 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../1.15.webp" alt="Client Logo 15" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 16 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../1.16.webp" alt="Client Logo 16" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 17 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../1.17.webp" alt="Client Logo 17" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 18 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../1.18.webp" alt="Client Logo 18" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 19 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../1.19.webp" alt="Client Logo 19" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 20 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../1.20.webp" alt="Client Logo 20" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 21 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../1.21.webp" alt="Client Logo 21" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 22 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../1.22.webp" alt="Client Logo 22" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 23 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../1.23.webp" alt="Client Logo 23" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 24 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../1.24.webp" alt="Client Logo 24" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 14 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../3.1.webp" alt="Client Logo 14" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 15 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../2.98.webp" alt="Client Logo 15" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 16 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../3.2.webp" alt="Client Logo 16" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 17 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../3.3.webp" alt="Client Logo 17" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 18 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../3.4.webp" alt="Client Logo 18" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 19 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../3.5.webp" alt="Client Logo 19" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 20 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../3.6.webp" alt="Client Logo 20" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 21 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../2.3.webp" alt="Client Logo 21" class="h-16 w-auto object-contain">
-    </div>
-    
-    <!-- Logo 23 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../1.23.webp" alt="Client Logo 23" class="h-16 w-auto object-contain">
-    </div>
-    <!-- Logo 24 -->
-    <div class="flex items-center justify-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-      <img src="../1.24.webp" alt="Client Logo 24" class="h-16 w-auto object-contain">
-    </div>
-  </div>
-</div>
+
 
 
 
 
       
-<footer class="bg-gray-100 py-4 border-t border-gray-300 font-bold">
-  <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
-    <!-- Left Section -->
-    <div class="text-sm text-gray-600 text-center md:text-left mb-2 md:mb-0">
-      © 2025 CloudJay Software. All rights reserved.
-    </div>
 
-    <!-- Right Section -->
-    <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 text-center md:text-left">
-      <a href="#" class="text-sm text-gray-600 hover:text-gray-800">Terms of Services</a>
-      <a href="#" class="text-sm text-gray-600 hover:text-gray-800">Privacy Policy</a>
-    </div>
-  </div>
-</footer>
 
 
       

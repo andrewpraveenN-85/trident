@@ -801,7 +801,7 @@ $result = $conn->query($sql);
 
     <!-- Bottom Section -->
     <div class="flex flex-col md:flex-row justify-between items-center">
-      <p class="text-sm">&copy; 2025 Cloud-Jay of Companies. All rights reserved.</p>
+      <p class="text-sm">&copy; 2025 Cloud-Jay Software. All rights reserved.</p>
       <div class="flex space-x-6">
         <a href="#" class="text-gray-600 hover:text-gray-800">Terms of Services</a>
         <a href="#" class="text-gray-600 hover:text-gray-800">Privacy Policy</a>

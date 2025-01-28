@@ -34,10 +34,10 @@ $conn->close();
         }
     </style>
 </head>
-<body class="bg-white">
+<body class="bg-[#F5F1E5]">
    <!-- Back Arrow -->
 <div class="flex justify-start p-4">
-  <a href="index.php" class="flex items-center text-red-500 hover:text-red-700 text-base sm:text-lg md:text-xl font-medium">
+  <a href="index.php" class="flex items-center text-brown-700 hover:text-brown-700 text-base sm:text-lg md:text-xl font-medium">
     <i class="fas fa-arrow-left mr-2"></i>
     <span>Back</span>
   </a>
@@ -47,7 +47,7 @@ $conn->close();
     <!-- Main Section -->
     <section class="container mx-auto px-4 sm:px-6 py-6 text-center">
         <!-- Heading -->
-        <h1 class="text-3xl sm:text-4xl font-bold text-red-800 mb-4">COMPLETED PROJECTS</h1>
+        <h1 class="text-3xl sm:text-4xl font-bold text-[#674636] mb-4">COMPLETED PROJECTS</h1>
         <p class="text-base sm:text-lg text-gray-700 mb-8">
             We’re proud of the homes we’ve built and the dreams we’ve made a reality. Each project reflects our commitment to quality and modern design.
             Explore our completed projects and see how we’ve created spaces for better living.
@@ -82,7 +82,7 @@ $conn->close();
                         <div class="shadow-lg">
                             <img src="<?php echo $image_path; ?>" alt="Project Image" class="w-full h-60 object-cover">
                         </div>
-                        <div class="bg-red-800 text-white text-center py-4 shadow-lg">
+                        <div class="bg-[#674636] text-white text-center py-4 shadow-lg">
                             <p class="font-bold text-lg "><?php echo $project_name; ?></p>
                             <p class="text-sm"><?php echo $locations; ?></p>
                         </div>
@@ -116,7 +116,7 @@ $conn->close();
                 </button>
 
                 <!-- Form Heading -->
-                <h1 class="text-2xl sm:text-3xl font-bold text-red-800 mb-6 sm:mb-8">Add a New Complete Project</h1>
+                <h1 class="text-2xl sm:text-3xl font-bold text-brown-700 mb-6 sm:mb-8">Add a New Complete Project</h1>
 
                 <!-- Form -->
                 <form action="Complet2.php" method="POST" enctype="multipart/form-data" class="space-y-4 sm:space-y-6">
@@ -143,7 +143,7 @@ $conn->close();
                     <label class="block w-full bg-gray-100 border border-gray-300 rounded-lg py-4 px-6 sm:py-6 sm:px-8 text-gray-500 cursor-pointer hover:bg-gray-200 transition">
                         <span class="flex justify-between items-center">
                             Upload Images
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 sm:h-6 w-5 sm:w-6 text-red-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 sm:h-6 w-5 sm:w-6 text-brown-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
                             </svg>
                         </span>
@@ -159,7 +159,7 @@ $conn->close();
                     <div class="mt-6 sm:mt-8">
                         <button 
                             type="submit" 
-                            class="w-full bg-red-800 text-white py-3 sm:py-4 rounded-lg hover:bg-red-900 transition"
+                            class="w-full bg-brown-700 text-white py-3 sm:py-4 rounded-lg hover:bg-red-900 transition"
                         >
                             Add Project
                         </button>

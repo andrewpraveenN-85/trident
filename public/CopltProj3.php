@@ -87,10 +87,10 @@ if ($project_id) {
         }
     </style>
 </head>
-<body class="bg-white">
+<body class="bg-[#F5F1E5]">
 
 <div class="flex justify-start p-4">
-  <a href="Complet2.php" class="flex items-center text-red-500 hover:text-red-700 text-base sm:text-lg md:text-xl font-medium">
+  <a href="Complet2.php" class="flex items-center text-brown-700 hover:text-brown-700 text-base sm:text-lg md:text-xl font-medium">
     <i class="fas fa-arrow-left mr-2"></i>
     <span>Back</span>
   </a>
@@ -101,13 +101,13 @@ if ($project_id) {
         <!-- Heading Section -->
         <div class="text-center mt-6 sm:mt-8">
             <h1 
-              class="text-3xl sm:text-4xl font-bold text-red-700" 
+              class="text-3xl sm:text-4xl font-bold text-brown-700" 
               style="font-family: 'Lora', serif;"
             >
             COMPLETE PROJECTS
             </h1>
             <p 
-              class="text-base sm:text-lg text-red-800 mx-auto mt-4 leading-relaxed w-full sm:w-2/3" 
+              class="text-base sm:text-lg text-brown-700 mx-auto mt-4 leading-relaxed w-full sm:w-2/3" 
               style="font-family: 'Lora', serif;"
             >
             We’re proud of the homes we’ve built and the dreams we’ve made a reality. Each project reflects our commitment to quality and modern design.

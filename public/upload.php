@@ -30,9 +30,9 @@ $conn->close();
         }
     </style>
 </head>
-<body class="bg-white">
+<body class="bg-[#F5F1E5]">
 <div class="flex justify-start p-4">
-  <a href="index.php" class="flex items-center text-red-500 hover:text-red-700 text-base sm:text-lg md:text-xl font-medium">
+  <a href="index.php" class="flex items-center text-[#674636] hover:text-black text-base sm:text-lg md:text-xl font-medium">
     <i class="fas fa-arrow-left mr-2"></i>
     <span>Back</span>
   </a>
@@ -41,8 +41,8 @@ $conn->close();
     <!-- Main Section -->
     <section class="container mx-auto p-6 text-center">
         <!-- Heading -->
-        <h1 class="text-4xl font-bold text-indigo-900 mb-4">UPCOMING PROJECTS</h1>
-        <p class="text-lg text-gray-700 mb-8">
+        <h1 class="text-4xl font-bold text-[#674636] mb-4">UPCOMING PROJECTS</h1>
+        <p class="text-lg text-[#674636] mb-8">
             We’re excited to share what’s next at Trident Residencies! Our upcoming projects are thoughtfully designed 
             to bring modern living and comfort together, creating homes you’ll love.
         </p>
@@ -78,7 +78,7 @@ $conn->close();
                         <div class="shadow-lg">
                             <img src="<?php echo $image_path; ?>" alt="Project Image" class="w-full h-60 object-cover">
                         </div>
-                        <div class="bg-indigo-900 text-white text-center py-4">
+                        <div class="bg-[#674636] text-white  text-center py-4">
                             <p class="font-bold text-lg"><?php echo $project_name; ?></p>
                             <p class="text-sm"><?php echo $locations; ?></p>
                         </div>
@@ -112,7 +112,7 @@ $conn->close();
             </button>
 
             <!-- Form Heading -->
-            <h1 class="text-2xl md:text-4xl font-bold text-indigo-900 mb-6 md:mb-8">Add a New Upcoming Project</h1>
+            <h1 class="text-2xl md:text-4xl font-bold text-[#674636] mb-6 md:mb-8">Add a New Upcoming Project</h1>
 
             <!-- Form -->
             <form action="upload.php" method="POST" enctype="multipart/form-data" class="space-y-4 md:space-y-6">
@@ -157,7 +157,7 @@ $conn->close();
                 <div class="mt-6 md:mt-8">
                     <button 
                         type="submit" 
-                        class="w-full bg-indigo-600 text-white py-3 md:py-4 rounded-lg hover:bg-indigo-700 transition"
+                        class="w-full bg-[#674636] text-white py-3 md:py-4 rounded-lg hover:bg-indigo-700 transition"
                     >
                         Add Project
                     </button>

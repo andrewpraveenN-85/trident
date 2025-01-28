@@ -86,17 +86,17 @@ if ($project_id) {
         }
     </style>
 </head>
-<body class="bg-white">
+<body class="bg-[#F5F1E5]">
 
     <!-- Main Section -->
     <section class="w-full p-6">
         <!-- Heading Section -->
         <div class="text-center mt-8">
-            <h1 class="text-3xl sm:text-4xl font-bold text-indigo-900" style="font-family: 'Lora', serif;">
+            <h1 class="text-3xl sm:text-4xl font-bold text-[#674636]" style="font-family: 'Lora', serif;">
                 UPCOMING PROJECTS
             </h1>
             <p 
-              class="text-base sm:text-lg text-indigo-900 mx-auto mt-4 leading-relaxed w-full sm:w-2/3" 
+              class="text-base sm:text-lg text-[#674636] mx-auto mt-4 leading-relaxed w-full sm:w-2/3" 
               style="font-family: 'Lora', serif;"
             >
               We’re excited to share what’s next at Trident Residencies! Our upcoming projects are thoughtfully designed 

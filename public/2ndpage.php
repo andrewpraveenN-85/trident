@@ -18,11 +18,11 @@
         }
     </style>
 </head>
-<body class="bg-white">
+<body class="bg-[#F5F1E5]">
     <!-- Main Section -->
     <section class="container mx-auto p-4 sm:p-6 text-center">
         <!-- Heading -->
-        <h1 class="text-3xl sm:text-4xl font-bold text-indigo-900 mb-4">UPCOMING PROJECTS</h1>
+        <h1 class="text-3xl sm:text-4xl font-bold text-[#674636] mb-4">UPCOMING PROJECTS</h1>
         <p class="text-sm sm:text-lg text-gray-700 mb-8">
             We’re excited to share what’s next at Trident Residencies! Our upcoming projects are thoughtfully designed 
             to bring modern living and comfort together, creating homes you’ll love.
@@ -33,42 +33,42 @@
             <!-- Card Template -->
             <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 transform hover:scale-105">
                 <img src="up1.webp" alt="Project Image" class="w-full h-40 sm:h-60 object-cover">
-                <div class="bg-indigo-900 text-white text-center py-4">
+                <div class="bg-[#674636] text-white text-center py-4">
                     <p class="font-bold text-lg">Project Name</p>
                     <p class="text-sm">Project Address</p>
                 </div>
             </div>
             <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 transform hover:scale-105">
                 <img src="up2.webp" alt="Project Image" class="w-full h-40 sm:h-60 object-cover">
-                <div class="bg-indigo-900 text-white text-center py-4">
+                <div class="bg-[#674636] text-white text-center py-4">
                     <p class="font-bold text-lg">Project Name</p>
                     <p class="text-sm">Project Address</p>
                 </div>
             </div>
             <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 transform hover:scale-105">
                 <img src="up1.webp" alt="Project Image" class="w-full h-40 sm:h-60 object-cover">
-                <div class="bg-indigo-900 text-white text-center py-4">
+                <div class="bg-[#674636] text-white text-center py-4">
                     <p class="font-bold text-lg">Project Name</p>
                     <p class="text-sm">Project Address</p>
                 </div>
             </div>
             <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 transform hover:scale-105">
                 <img src="up2.webp" alt="Project Image" class="w-full h-40 sm:h-60 object-cover">
-                <div class="bg-indigo-900 text-white text-center py-4">
+                <div class="bg-[#674636] text-white text-center py-4">
                     <p class="font-bold text-lg">Project Name</p>
                     <p class="text-sm">Project Address</p>
                 </div>
             </div>
             <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 transform hover:scale-105">
                 <img src="up1.webp" alt="Project Image" class="w-full h-40 sm:h-60 object-cover">
-                <div class="bg-indigo-900 text-white text-center py-4">
+                <div class="bg-[#674636] text-white text-center py-4">
                     <p class="font-bold text-lg">Project Name</p>
                     <p class="text-sm">Project Address</p>
                 </div>
             </div>
             <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 transform hover:scale-105">
                 <img src="up2.webp" alt="Project Image" class="w-full h-40 sm:h-60 object-cover">
-                <div class="bg-indigo-900 text-white text-center py-4">
+                <div class="bg-[#674636] text-white text-center py-4">
                     <p class="font-bold text-lg">Project Name</p>
                     <p class="text-sm">Project Address</p>
                 </div>
@@ -91,7 +91,7 @@
                     </button>
 
                     <!-- Form Heading -->
-                    <h1 class="text-xl sm:text-2xl font-bold text-indigo-900 mb-4 sm:mb-6">Add a New Upcoming Project</h1>
+                    <h1 class="text-xl sm:text-2xl font-bold text-[#674636] mb-4 sm:mb-6">Add a New Upcoming Project</h1>
 
                     <!-- Form -->
                     <form action="/upload" method="POST" enctype="multipart/form-data" class="space-y-4 sm:space-y-6">
@@ -118,7 +118,7 @@
                         <label class="block w-full bg-gray-100 border border-gray-300 rounded-lg py-4 px-6 text-gray-500 cursor-pointer hover:bg-gray-200 transition">
                             <span class="flex justify-between items-center">
                                 Upload Images
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 sm:h-6 w-5 sm:w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 sm:h-6 w-5 sm:w-6 text-[#674636]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
                                 </svg>
                             </span>
@@ -133,7 +133,7 @@
                         <div class="mt-4 sm:mt-6">
                             <button 
                                 type="submit" 
-                                class="w-full bg-indigo-900 text-white py-3 sm:py-4 rounded-lg hover:bg-indigo-800 transition"
+                                class="w-full bg-[#674636] text-white py-3 sm:py-4 rounded-lg hover:bg-[#674636] transition"
                             >
                                 Add Project
                             </button>

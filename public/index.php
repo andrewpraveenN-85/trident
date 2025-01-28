@@ -15,7 +15,7 @@ $result = $conn->query($sql);
   <link href="../src/output.css" rel="stylesheet">
 </head>
 
-<body class="bg-gray-50">
+<body class="bg-[#F5F1E5]">
 
 
 
@@ -23,100 +23,27 @@ $result = $conn->query($sql);
 
 
 
-<header class="bg-white shadow "></header>
+<div id="navbar" class="fixed z-10 w-full bg-transparent transition-all duration-300 ease-in-out">
+  <!-- Navbar Content -->
+  <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+    <!-- Logo Section -->
+    <a href="https://wa.me/94710777666" class="flex items-center">
+      <img src="LOGO.webp" alt="Logo" class="w-[70px] h-[30px] object-contain z-10" />
+    </a>
 
-  <div class=" bg-white mx-auto px-4 py-3 flex items-center justify-arround fixed z-10 w-full">
+    <!-- Navigation Links -->
+    <nav class="hidden md:flex space-x-6">
+      <a href="#section2" class="text-[#674636] hover:underline font-medium">About Us</a>
+      <a href="#section3" class="text-[#674636] hover:underline font-medium">Completed Projects</a>
+      <a href="#section4" class="text-[#674636] hover:underline font-medium">Upcoming Projects</a>
+      <a href="#section5" class="text-[#674636] hover:underline font-medium">Pantry Designs</a>
+      <a href="#section6" class="text-[#674636] hover:underline font-medium">Contact Us</a>
+    </nav>
 
-
- <!-- Left Section: Hotline and Social Media -->
-  
-<a href="https://wa.me/94710777666"class="bg-white flex flex-col sm:flex-row items-center space-y-2 w-full sm:space-y-0 sm:space-x-4">
-  <span class="text-red-500 font-semibold text-sm uppercase">Contact: +94 71 426 6679</span>
-  </a>
-  
-
-
- <!-- Right Section: Navigation Menu -->
- <nav class="flex space-x-6 hidden md:flex w-full">
-        <a href="#section2" class="text-[#2D2E74] hover:underline font-medium">About Us</a>
-        <a href="#section3" class="text-[#2D2E74] hover:underline font-medium">Completed Projects</a>
-        <a href="#section4" class="text-[#2D2E74] hover:underline font-medium">Upcoming Projects</a>
-        <a href="#section5" class="text-[#2D2E74] hover:underline font-medium">Pantry Designs</a>
-        <a href="#section6" class="text-[#2D2E74] hover:underline font-medium">Contact Us</a>
-      </nav>
-      <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
-<!-- Keyframes and Animation Styles -->
-<style>
-  /* Keyframes for fade and slide-in animation */
-  @keyframes fadeInSlide {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  /* Apply animation with delay to each link */
-  .fade-slide {
-    animation: fadeInSlide 0.6s ease-out forwards;
-    opacity: 0; /* Ensure items are hidden before animation starts */
-  }
-
-  .fade-slide:nth-child(1) { animation-delay: 0.1s; }
-  .fade-slide:nth-child(2) { animation-delay: 0.2s; }
-  .fade-slide:nth-child(3) { animation-delay: 0.3s; }
-  .fade-slide:nth-child(4) { animation-delay: 0.4s; }
-</style>
-
-<!-- JavaScript to Trigger Animation (Optional) -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const links = document.querySelectorAll(".fade-slide");
-    links.forEach(link => {
-      // Apply animation class when the page loads or when the menu becomes visible
-      link.classList.add("fade-slide");
-    });
-  });
-</script>
-<head>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" defer></script>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    /* Keyframes for fade and slide-in animation */
-    @keyframes fadeInSlide {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    /* Apply animation with delay to each item */
-    .fade-slide {
-      animation: fadeInSlide 0.6s ease-out forwards;
-    }
-    .fade-slide:nth-child(1) { animation-delay: 0.1s; }
-    .fade-slide:nth-child(2) { animation-delay: 0.2s; }
-    .fade-slide:nth-child(3) { animation-delay: 0.3s; }
-    .fade-slide:nth-child(4) { animation-delay: 0.4s; }
-    .fade-slide:nth-child(5) { animation-delay: 0.5s; }
-  </style>
-</head>
-<body class="bg-gray-100">
-
-  <!-- Wrapped Menu Component in a Div -->
+     <!-- Wrapped Menu Component in a Div -->
   <div class="menu-component">
     <!-- Menu Button -->
-    <button id="menuButton" class="flex items-center text-[#ED1C24] hover:text-[#000000] font-medium mt-2 ml-4">
+    <button id="menuButton" class="flex items-center text-[#674636] hover:text-[#000000] font-medium mt-2 ml-4">
       <i class="fas fa-bars mr-1"></i> MENU
     </button>
 
@@ -127,7 +54,7 @@ $result = $conn->query($sql);
         &times;
       </button>
       <!-- Menu Items -->
-      <ul class="text-center space-y-6 text-2xl text-[#2D2E74] font-semibold">
+      <ul class="text-center space-y-6 text-2xl text-[#674636] font-semibold">
         <li class="fade-slide"><a href="index.php" class="hover:underline">Home</a></li>
         <li class="fade-slide"><a href="Complet2.php" class="hover:underline">Completed Projects</a></li>
         <li class="fade-slide"><a href="upload.php" class="hover:underline">Upcoming Projects</a></li>
@@ -151,19 +78,25 @@ $result = $conn->query($sql);
       overlay.classList.remove("flex");
     });
   </script>
-</body>
-
-
-
-
-
-
-
-
-
-
-    </nav>
   </div>
+</div>
+
+<!-- JavaScript for Scroll Behavior -->
+<script>
+  const navbar = document.getElementById("navbar");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      navbar.classList.remove("bg-transparent");
+      navbar.classList.add("bg-white", "shadow-lg");
+      navbar.querySelectorAll("a").forEach(link => link.classList.replace("text-white", "text-[#674636]"));
+    } else {
+      navbar.classList.remove("bg-white", "shadow-lg");
+      navbar.classList.add("bg-transparent");
+      navbar.querySelectorAll("a").forEach(link => link.classList.replace("text-[#674636]", "text-white"));
+    }
+  });
+</script>
 
 
 
@@ -181,177 +114,132 @@ $result = $conn->query($sql);
 
 
 
-   <!-- Outer Container -->
-   <div class="flex flex-col items-center bg-white h-screen">
-    <!-- Auto-Sliding Section -->
-    <div class="relative w-full h-full overflow-hidden">
-      <!-- Carousel -->
-      <div id="sectionCarousel" class="flex transition-transform duration-700">
-        <!-- Section 1 -->
-        <div class="flex flex-col items-center justify-center w-full h-screen flex-shrink-0 bg-white text-white " >
-          <img src="LOGO.webp" alt="Center Image" class="w-screen h-96 mb-4 object-contain z-10"/>
-          
-                <!-- Arrow Down -->
-                <div id="scroll-button" class="mt-8">
-                  <a href="#trident-residencies">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="2"
-                      stroke="currentColor"
-                      class="w-6 h-6 text-gray-700 animate-bounce"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg>
-                  </a>
-                </div>
+<div class="relative w-full h-screen overflow-hidden -mb-20">
+  <!-- Background Scroll Container -->
+  <div id="backgroundScroll" class="flex w-[300%] h-5/6 transition-transform duration-500">
+    <!-- Slide 1 -->
+    <div class="relative w-1/3 h-full bg-cover bg-center" style="background-image: url('l2.webp');">
+      <div class="absolute inset-0 flex items-end justify-center p-4">
+        <div class="text-center">
+          <h1 class="text-white text-4xl font-bold animate-slideIn">....</h1>
+          <p class="text-white text-sm mt-2 animate-slideIn">Architecture</p>
         </div>
-        
-        <!-- Section 2 -->
-        <div  class=" flex-col items-center justify-center w-full  h-screen flex flex-shrink-0 bg-white text-white ">
-          <div class="relative flex items-start justify-start w-full h-screen bg-white text-white">
-            <!-- Background Image -->
-            <img src="3526t.webp" alt="Background Image" class="hidden md:flex absolute inset-0 w-full h-full object-cover z-0 filter brightness-75 contrast-80" />
-            
-            <!-- Text Content -->
-            <div class="relative z-10 flex flex-col items-start justify-center mt-60 text-left p-8 lg:p-16">
-              <h1 class="text-6xl font-bold text-blue-900 mb-2">TRIDENT</h1>
-              <h2 class="text-5xl font-semibold text-gray-700 mb-6">Residencies Pvt Ltd</h2>
-              <div class="border-t border-gray-400 w-60 my-4"></div>
-              <button class="px-6 py-2 text-3xl font-semibold text-white bg-blue-900 rounded-full hover:bg-blue-800 transition duration-300 mb-6">
-                Call Us
-              </button>
-              <p class="text-3xl font-semibold text-gray-800">
-                077-3219679 / 071-4266679
-              </p>
-            </div>
-          </div>
+      </div>
+    </div>
+    <!-- Slide 2 -->
+    <div class="relative w-1/3 h-full bg-cover bg-center" style="background-image: url('y3.webp');">
+      <div class="absolute inset-0 flex items-end justify-center p-4">
+        <div class="text-center">
+          <h1 class="text-white text-4xl font-bold animate-slideIn">....</h1>
+          <p class="text-white text-sm mt-2 animate-slideIn">Property Development</p>
         </div>
-        
-
-        <!-- Section 3 -->
-        <div class="relative items-center justify-center w-full h-screen  flex-shrink-0 bg-black text-white flex">
-          <!-- Background Image with Opacity -->
-          <div class="absolute inset-0 bg-cover bg-center opacity-70" style="background-image: url('page3s1.webp');"></div>
-        
-          <!-- Content -->
-          <div class="relative flex items-center justify-between max-w-7xl w-full px-6">
-            <!-- Left Section: Images -->
-            <div class="flex hidden md:flex space-x-6">
-              <!-- Image 1 -->
-              <div class="border-8 border-[#D8FEA6] p-0">
-                <img src="l1.webp" alt="Luxury House" class="object-cover" style="width: 350px; height: 350px;" />
-              </div>
-              <!-- Image 2 -->
-              <div class="border-8 border-[#D8FEA6] p-0">
-                <img src="l2.webp" alt="Luxury Interior" class="object-cover" style="width: 350px; height: 350px;" />
-              </div>
-              <!-- Image 3 -->
-              <div class="border-8 border-[#D8FEA6] p-0">
-                <img src="l3.webp" alt="Luxury Kitchen" class="object-cover" style="width: 350px; height: 350px;" />
-              </div>
-            </div>
-        
-            <!-- Right Section: Text -->
-            <div class="ml-12 text-[#D8FEA6] text-left">
-              <h1 class="text-6xl font-bold mb-6">LUXURY DESIGNS...</h1>
-              <p class="text-2xl leading-relaxed">Extraordinary Style With Extraordinary Locations</p>
-            </div>
-          </div>
-        </div>
-        
-        
-        
-        <!-- Section 4 (Duplicate for seamless loop) -->
-        <div class="flex flex-col items-center justify-center w-full h-screen flex-shrink-0 bg-white text-white">
-          <img src="LOGO.webp" alt="Center Image" class="w-screen h-96 mb-4 object-contain" />
-          <!-- Arrow Down -->
-          <div id="scroll-button" class="mt-8">
-            <a href="#trident-residencies">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="currentColor"
-                class="w-6 h-6 text-gray-700 animate-bounce"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </a>
-          </div>
+      </div>
+    </div>
+    <!-- Slide 3 -->
+    <div class="relative w-1/3 h-full bg-cover bg-center" style="background-image: url('56.jpeg.jpg');">
+      <div class="absolute inset-0 flex items-end justify-center p-4">
+        <div class="text-center">
+          <h1 class="text-white text-4xl font-bold animate-slideIn">....</h1>
+          <p class="text-white text-sm mt-2 animate-slideIn">Interior</p>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- JavaScript for Auto-Scrolling -->
-  <script>
-    const sectionCarousel = document.getElementById('sectionCarousel');
-    const slides = sectionCarousel.children.length - 1; // Total slides minus the duplicate for looping
-    let index = 0;
+  <!-- Left Arrow -->
+  <button id="leftArrow" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-transparent text-white p-3">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+    </svg>
+  </button>
 
-    function autoSlideSections() {
-      index++;
-      sectionCarousel.style.transition = "transform 0.7s ease";
-      sectionCarousel.style.transform = `translateX(-${index * 100}%)`;
+  <!-- Right Arrow -->
+  <button id="rightArrow" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-transparent text-white p-3">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+    </svg>
+  </button>
+</div>
 
-      // Reset to the first slide for seamless looping
-      if (index >= slides) {
-        setTimeout(() => {
-          sectionCarousel.style.transition = "none"; // Disable animation for reset
-          sectionCarousel.style.transform = `translateX(0)`;
-          index = 0;
-        }, 700); // Match the transition duration (0.7s)
-      }
+<style>
+  @keyframes slideIn {
+    from {
+      transform: translateY(100%);
     }
+    to {
+      transform: translateY(0);
+    }
+  }
 
-    // Auto-slide every 3 seconds
-    setInterval(autoSlideSections, 3000);
-  </script>
+  .animate-slideIn {
+    animation: slideIn 1s ease-in-out;
+  }
+</style>
 
+<script>
+  let currentIndex = 0;
+  const slides = document.querySelectorAll('#backgroundScroll > div');
+  const totalSlides = slides.length;
 
+  function updateSlidePosition() {
+    const scrollContainer = document.getElementById('backgroundScroll');
+    scrollContainer.style.transform = `translateX(-${currentIndex * 100 / totalSlides}%)`;
+  }
 
+  function showNextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    updateSlidePosition();
+  }
 
-  </div>
+  function showPreviousSlide() {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    updateSlidePosition();
+  }
+
+  document.getElementById('rightArrow').addEventListener('click', showNextSlide);
+  document.getElementById('leftArrow').addEventListener('click', showPreviousSlide);
+
+  // Auto-scroll every 5 seconds
+  setInterval(showNextSlide, 5000);
+</script>
   
 
 
 
 
-  <section id="section2" class="min-h-screen bg-white flex flex-col items-center justify-center px-4 md:px-6 py-8 md:py-16">
+
+
+
+
+
+
+
+
+
+  <section id="section2" class="min-h-screen bg-[#F5F1E5] flex flex-col items-center justify-center px-4 md:px-6 py-8 md:py-16">
   <div class="flex flex-col lg:flex-row items-center lg:space-x-12 max-w-7xl w-full">
     
     <!-- Left Image with Text Overlay -->
     <div class="relative w-full lg:w-1/2">
       <img
-        src="7788i.JPEG.jpg"
+        src="q34.png"
         alt="Building"
-        class="rounded-lg object-cover w-full h-auto"
+        class="rounded-lg object-cover w-[550px] h-auto"
       >
     </div>
 
     <!-- Right Text Section -->
     <div class="mt-8 md:mt-12 lg:mt-0 lg:w-1/2">
-      <h1 class="text-2xl md:text-3xl lg:text-4xl font-serif font-bold mb-6 text-black text-center lg:text-left" style="font-family: 'Lora', serif;">
+      <h1 class="text-2xl md:text-3xl lg:text-4xl font-sun-serif font-bold mb-6 text-black text-center lg:text-left"  style="font-family: 'Helvtica',sun-serif;">
         Welcome to Trident Residencies Pvt Ltd
       </h1>
-      <p class="text-black text-base md:text-lg font-serif leading-6 md:leading-7 mb-4 text-center lg:text-left" style="font-family: 'Lora', serif;">
+      <p class="text-black text-base md:text-[16px] font-serif leading-6 md:leading-7 mb-4 text-center lg:text-left" style="font-family: 'Lora', serif;">
         Welcome to <strong>Trident Residencies</strong>, where your dream home becomes reality. Founded in 2017 by visionary entrepreneur Mr. Shan B, we craft homes that blend modern design with natural harmony.
       </p>
-      <p class="text-black text-base md:text-lg font-serif leading-6 md:leading-7 mb-4 text-center lg:text-left" style="font-family: 'Lora', serif;">
+      <p class="text-black text-base md:text-[16px] font-serif leading-6 md:leading-7 mb-4 text-center lg:text-left" style="font-family: 'Lora', serif;">
         Guided by our promise, <strong>"Your Vision, Our Design,"</strong> we create spaces that redefine modern living with exceptional quality and thoughtful innovation.
       </p>
-      <p class="text-black text-base md:text-lg font-serif leading-6 md:leading-7 text-center lg:text-left" style="font-family: 'Lora', serif;">
+      <p class="text-black text-base md:text-[16px] font-serif leading-6 md:leading-7 text-center lg:text-left" style="font-family: 'Lora', serif;">
         Discover a home that’s more than a place to live—it’s a reflection of your aspirations. <strong>Trident Residencies: Where dreams come home.</strong>
       </p>
     </div>
@@ -369,20 +257,20 @@ $result = $conn->query($sql);
   </div>
 
 
-  <section class="bg-cover bg-center text-white h-[90vh] px-4 py-8 md:py-12" style="background-image: url('vision.webp');">
+  <section class="bg-cover bg-center bg-[#F5F1E5] text-black h-[60vh] px-4 py-0 md:py-0">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <div class="max-w-4xl mx-auto text-center p-4 md:p-8" style="font-family: 'Lora', serif;">
       <!-- Title -->
-      <h1 class="text-3xl md:text-6xl font-bold uppercase mb-6 md:mb-8">
+      <h1 class="text-3xl md:text-2xl font-bold uppercase mb-0 md:mb-0">
         Our Vision & Mission
       </h1>
       
       <!-- Our Vision Section -->
       <div class="mb-8">
-        <h2 class="text-2xl md:text-4xl font-semibold mb-4">
+        <h2 class="text-2xl md:text-xl font-semibold mb-4 mt-4">
           Our Vision
         </h2>
-        <p class="text-base md:text-2xl leading-relaxed">
+        <p class="text-base md:text-[16px] leading-relaxed">
           To create homes that inspire, combining modern design, natural harmony, and lasting quality.
         </p>
       </div>
@@ -394,13 +282,13 @@ $result = $conn->query($sql);
       
       <!-- Our Mission Section -->
       <div>
-        <h2 class="text-2xl md:text-4xl font-semibold mb-4 mt-6">
+        <h2 class="text-2xl md:text-xl font-semibold mb-4 mt-6">
           Our Mission
         </h2>
-        <p class="text-base md:text-2xl leading-relaxed mb-4">
+        <p class="text-base md:text-[16px] leading-relaxed mb-4">
           We bring your dream home to life with thoughtful design,
         </p>
-        <p class="text-base md:text-2xl leading-relaxed">
+        <p class="text-base md:text-[16px] leading-relaxed">
            unmatched quality, and a touch of elegance. At Trident Residencies, we don’t just build houses—we create spaces where life feels complete.
         </p>
       </div>
@@ -414,7 +302,7 @@ $result = $conn->query($sql);
   
   <section id="section3" class="mt-8 w-full">
   <h1
-          class="text-4xl md:text-5xl font-bold text-center text-indigo-900 mb-8 "
+          class="text-4xl md:text-5xl font-bold text-center text-[#674636] mb-8 "
           style="font-family: 'Lora', serif; font-weight: 700;"
         >
           COMPLETED PROJECTS
@@ -452,7 +340,7 @@ $result = $conn->query($sql);
           <!-- Back Panel -->
           <div
             class="absolute inset-0 text-white flex flex-col items-center justify-center px-4 text-center transition-transform duration-500 translate-y-full group-hover:translate-y-0"
-            style="background-color: #2D2E70;"
+            style="background-color: #674636;"
           >
             <h2 class="text-xl font-bold"><?php echo htmlspecialchars($projectName); ?></h2>
             <p class="text-sm mt-2"><?php echo htmlspecialchars($location); ?></p>
@@ -469,7 +357,7 @@ $result = $conn->query($sql);
   </div>
   <div class="flex items-center justify-center mt-4 h-16 w-auto">
     
-      <a href="Complet2.php" class="inline-block px-6 py-2 border-2 border-blue-900 text-blue-900 text-lg font-semibold rounded-full text-center hover:bg-blue-900 hover:text-white transition duration-300">
+      <a href="Complet2.php" class="inline-block px-6 py-2 border-2 border-[#674636] text-[#674636] text-lg font-semibold rounded-full text-center hover:bg-[#674636] hover:text-white transition duration-300">
         See More
       </a>
     
@@ -487,10 +375,10 @@ $result = $conn->query($sql);
       <!-- Include Lora Font from Google Fonts -->
       <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
 
-      <section id="section4"class="flex flex-col items-center justify-start md:pt-24 bg-white">
+      <section id="section4"class="flex flex-col items-center justify-start md:pt-24 bg-[#F5F1E5]">
         <!-- Upcoming Projects Title -->
         <h1
-          class="text-4xl md:text-5xl font-bold text-indigo-900 mb-8 text-center"
+          class="text-4xl md:text-5xl font-bold text-[#674636] mb-8 text-center"
           style="font-family: 'Lora', serif; font-weight: 700;  "
         >
           UPCOMING PROJECTS
@@ -533,14 +421,14 @@ $result = $conn->query($sql);
             >
               If you can dream it, <br> we can build it.
             </p>
-            <p class="text-gray-700 leading-relaxed text-center text-lg " style="font-family: 'Lora', serif;">
+            <p class="text-gray-700 leading-relaxed text-center text-[16px] " style="font-family: 'Lora', serif;">
               We adopt a uniquely personalized perspective to each project to deliver stunning spaces of optimal function.
               Renowned for our architectural understanding and masterful craftsmanship, our portfolio of residential
               projects...
             </p>
             <button>
               <div class="flex items-center justify-center mt-4 h-16 w-auto" style="font-family: 'Lora', serif;">
-                <a href="upload.php" class="inline-block px-6 py-2 bg-black text-white text-lg font-semibold rounded-full text-center hover:bg-gray-800 transition duration-300">
+                <a href="upload.php" class="inline-block px-6 py-2 bg-black text-white text-lg font-semibold rounded-full text-center hover:bg-[#674636]  transition duration-300">
                   View More
                 </a>
               </div>
@@ -583,14 +471,14 @@ $result = $conn->query($sql);
 
 
       <section id="section5">
-    <div class="p-14 border border-white rounded-lg max-w-7xl mx-auto h-screen">
+    <div class="p-14  rounded-lg max-w-7xl mx-auto h-screen">
   <!-- Container -->
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
     <!-- Left Side: Text Section -->
     <div class="flex flex-col justify-center">
       <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-brown-700 text-[#674636]"style="font-family: 'Lora', serif;">PANTRY DESIGNS</h2>
       <p class="text-lg md:text-xl italic bold text-brown-600 mt-2 text-black"style="font-family: 'Lora', serif;">Discover Your Dream Pantry</p>
-      <p class="text-brown-500 text-sm md:text-base lg:text-lg mt-4 text-[#674636]"style="font-family: 'Lora', serif;">
+      <p class="text-brown-500 text-sm md:text-sm lg:text-lg mt-4 text-[#674636]"style="font-family: 'Lora', serif;">
         Transform your kitchen with our stunning pantry designs that blend functionality and style.
         Whether you’re looking for a modern, rustic, or classic touch, we have the perfect solutions for you.
       </p>
@@ -641,7 +529,7 @@ $result = $conn->query($sql);
 
       <!-- video part -->
 
-      <div class="flex justify-center items-center bg-white py-0">
+      <div class="flex justify-center items-center bg-[#F5F1E5] py-0">
   <div class="max-w-4xl w-full">
     <video 
       id="dynamicVideo" 
@@ -702,9 +590,9 @@ $result = $conn->query($sql);
 
 
 <!-- Logo part -->
-      <div class="w-full flex flex-col justify-center items-center montserrat space-y-6 bg-white py-20">
+      <div class="w-full flex flex-col justify-center items-center montserrat space-y-6 bg-[#F5F1E5] py-20">
   <!-- Title -->
-  <p class="text-4xl font-bold text-indigo-900 mb-10"style="font-family: 'Lora', serif;">Our Suppliers</p>
+  <p class="text-4xl font-bold text-[#674636] mb-10"style="font-family: 'Lora', serif;">Our Suppliers</p>
 
   <!-- Logo Grid -->
   <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-6 w-full px-8 md:px-32">
@@ -806,112 +694,121 @@ $result = $conn->query($sql);
 </div>
 
 
-<section id="section6">
-  <footer class="bg-white py-10 text-gray-700">
-    <div class="container mx-auto px-6">
-      <!-- Top Section: Contact Information -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <!-- Shan Group of Companies -->
-        <div class="text-center md:text-left">
-          <p class="font-semibold text-lg text-gray-800">Shan Group of Companies</p>
-          <p class="text-sm text-gray-700">
-            Address: The Metropolis Tower, Office 204/205, 2nd Floor, Business Bay, Dubai, United Arab Emirates.<br>
-            <a href="https://www.shangroup.org" class="text-blue-600 hover:text-blue-800">www.shangroup.org</a>
+
+<!-- Contact Us Section -->
+<section id="section6" class="bg-[#F5F1E5] text-gray-800 py-10">
+  <div class="container mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
+      <!-- Vertical Line -->
+      <div class="hidden md:block absolute inset-y-0 left-1/2 transform -translate-x-1/2 w-[1px] bg-gray-400"></div>
+
+      <!-- Left Side -->
+      <div class="pr-6">
+        <h2 class="text-lg font-bold text-[#674636] mb-4">Contact Us</h2>
+        <p class="text-sm text-gray-700 mb-6">
+          We’re here to help! Feel free to contact us via WhatsApp, email, or visit our office.
+        </p>
+        <!-- Address -->
+        <div class="flex items-start space-x-3 mb-4">
+          <i class="fas fa-map-marker-alt text-[#AA7753] text-xl"></i>
+          <p class="text-sm">
+            <strong class="text-[#674636]">Address:</strong> 149, Galle Road, Dehiwala.
           </p>
         </div>
-
-        <!-- Shan Global Employment Services -->
-        <div class="text-center md:text-left">
-          <p class="font-semibold text-lg text-gray-800">Shan Global Employment Services LLC</p>
-          <p class="text-sm text-gray-700">
-            Location: Dubai, UAE.<br>
-            <a href="https://www.shandxb.com" class="text-blue-600 hover:text-blue-800">www.shandxb.com</a><br>
-            Phone: +971 4580 5678
-          </p>
-        </div>
-
-        <!-- Shan Global Technical Services -->
-        <div class="text-center md:text-left">
-          <p class="font-semibold text-lg text-gray-800">Shan Global Technical Services LLC</p>
-          <p class="text-sm text-gray-700">
-            Location: Dubai, UAE.<br>
-            <a href="https://www.shandxb.com" class="text-blue-600 hover:text-blue-800">www.shandxb.com</a><br>
-            Phone: +971 4580 5678
-          </p>
-        </div>
-
-        <!-- Assidua International -->
-        <div class="text-center md:text-left">
-          <p class="font-semibold text-lg text-gray-800">Assidua International (Pvt) Ltd.</p>
-          <p class="text-sm text-gray-700">
-            Address: 149, Galle Road, Dehiwala.<br>
-            Phone: 0112-735098 / 070 615 2999
+        <!-- Email -->
+        <div class="flex items-start space-x-3 mb-4">
+          <i class="fas fa-envelope text-[#AA7753] text-xl"></i>
+          <p class="text-sm">
+            <strong class="text-[#674636]">Email:</strong>
+            <a href="mailto:trident@assiduaint.com" class="text-[#674636] hover:text-[#AA7753]">trident@assiduaint.com</a>
           </p>
         </div>
       </div>
 
-      <!-- Bottom Section: Original Footer -->
-      <div class="mt-12">
-        <!-- Divider -->
-        <hr class="border-gray-300 mb-8">
-        <div class="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
-          <!-- Left Column: Address and Email -->
-          <div class="text-center md:text-left">
-            <p class="font-semibold text-lg text-gray-800">Get in Touch</p>
-            <p class="text-sm text-gray-700">
-              Trident Residencies (Pvt) Ltd.<br>
-              149, Galle Road, Dehiwala.<br>
-              <a href="mailto:trident@assiduaint.com" class="text-blue-600 hover:text-blue-800">
-                trident@assiduaint.com
-              </a>
-            </p>
-          </div>
-
-          <!-- Middle Column: Contact Numbers -->
-          <div class="text-center">
-            <p class="font-semibold text-lg text-gray-800">Contact Us</p>
-            <div class="flex flex-col space-y-3 text-sm">
-            <a href="https://wa.me/94710777667" class="flex items-center justify-center space-x-2 hover:text-green-500">
-                <i class="fab fa-whatsapp text-green-600 fa-lg"></i>
-                <span>+94 77 321 9679 - (Project Manager)</span>
-              </a>
-              <a href="https://wa.me/94710777666" class="flex items-center justify-center space-x-2 hover:text-green-500">
-                <i class="fab fa-whatsapp text-green-600 fa-lg"></i>
-                <span>+94 71 426 6679 - (Director)</span>
-              </a>
-              
-            </div>
-          </div>
-
-          <!-- Right Column: Social Media Links -->
-          <div class="text-center md:text-right">
-            <p class="font-semibold text-lg text-gray-800">Follow Us</p>
-            <div class="flex justify-center md:justify-end space-x-4">
-              <a href="#" class="hover:text-blue-600">
-                <i class="fab fa-facebook text-blue-600 fa-lg"></i>
-              </a>
-              <a href="#" class="hover:text-sky-500">
-                <i class="fab fa-twitter text-sky-500 fa-lg"></i>
-              </a>
-              <a href="#" class="hover:text-pink-500">
-                <i class="fab fa-instagram text-pink-500 fa-lg"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Bottom Legal Links -->
-        <div class="mt-8 border-t border-gray-300 pt-6 flex flex-col md:flex-row justify-between items-center text-sm">
-          <p class="text-gray-500">© 2025 CloudJay Software. All rights reserved.</p>
-          <div class="flex space-x-6">
-            <a href="#" class="text-gray-600 hover:text-gray-800">Terms of Services</a>
-            <a href="#" class="text-gray-600 hover:text-gray-800">Privacy Policy</a>
-          </div>
+      <!-- Right Side -->
+      <div class="pl-6">
+        <h2 class="text-lg font-bold text-[#674636] mb-4">WhatsApp Contacts</h2>
+        <div class="space-y-4">
+          <a href="https://wa.me/94710777667" class="flex items-center space-x-3 hover:text-green-500">
+            <i class="fab fa-whatsapp text-green-600 text-xl"></i>
+            <span class="text-sm">+94 77 321 9679 - (Project Manager)</span>
+          </a>
+          <a href="https://wa.me/94710777666" class="flex items-center space-x-3 hover:text-green-500">
+            <i class="fab fa-whatsapp text-green-600 text-xl"></i>
+            <span class="text-sm">+94 71 426 6679 - (Director)</span>
+          </a>
         </div>
       </div>
     </div>
-  </footer>
+  </div>
 </section>
+
+
+
+
+
+
+
+
+
+
+<!-- Footer Section -->
+<footer class="bg-[#F5F1E5] text-black py-10">
+  <div class="container mx-auto px-6">
+    <!-- Footer Columns -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Shan Group of Companies -->
+      <div>
+        <h3 class="font-semibold text-lg text-black mb-2">Shan Group of Companies</h3>
+        <p class="text-sm">
+          Address: The Metropolis Tower, Office 204/205, 2nd Floor, Business Bay, Dubai, UAE.<br>
+          <a href="https://www.shangroup.org" class="text-blue-600 hover:text-blue-800">www.shangroup.org</a>
+        </p>
+      </div>
+
+      <!-- Shan Global Employment Services -->
+      <div>
+        <h3 class="font-semibold text-lg text-black mb-2">Shan Global Employment Services LLC</h3>
+        <p class="text-sm">
+          Location: Dubai, UAE.<br>
+          <a href="https://www.shandxb.com" class="text-blue-600 hover:text-blue-800">www.shandxb.com</a><br>
+          Phone: +971 4580 5678
+        </p>
+      </div>
+
+      <!-- Shan Global Technical Services -->
+      <div>
+        <h3 class="font-semibold text-lg text-black mb-2">Shan Global Technical Services LLC</h3>
+        <p class="text-sm">
+          Location: Dubai, UAE.<br>
+          <a href="https://www.shandxb.com" class="text-blue-600 hover:text-blue-800">www.shandxb.com</a><br>
+          Phone: +971 4580 5678
+        </p>
+      </div>
+
+      <!-- Assidua International -->
+      <div>
+        <h3 class="font-semibold text-lg text-black mb-2">Assidua International (Pvt) Ltd.</h3>
+        <p class="text-sm">
+          Address: 149, Galle Road, Dehiwala.<br>
+          Phone: 0112-735098 / 070 615 2999
+        </p>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="my-10 border-t border-gray-300"></div>
+
+    <!-- Bottom Section -->
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <p class="text-sm">&copy; 2025 Cloud-Jay of Companies. All rights reserved.</p>
+      <div class="flex space-x-6">
+        <a href="#" class="text-gray-600 hover:text-gray-800">Terms of Services</a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
 
 
 

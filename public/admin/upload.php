@@ -133,13 +133,18 @@ $conn->close();
             $first_image = $images[0] ?? 'default-image.webp'; 
             ?>
             <div class=" bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 transform hover:scale-105">
-                <div class="shadow-lg">
-                    <img src="<?php echo htmlspecialchars($first_image); ?>" alt="Project Image" class="w-full h-60 object-cover">
-                </div>
+            <div class="relative shadow-lg">
+    <img src="<?php echo htmlspecialchars($first_image); ?>" alt="Project Image" class="w-full h-60 object-cover">
+    <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
+        <p class="text-white text-lg font-bold opacity-80">See More</p>
+    </div>
+</div>
+
                 <div class="bg-[#674636] text-white text-center py-4">
                     <p class="font-bold text-lg"><?php echo $project_name; ?></p>
                     <p class="text-sm"><?php echo $locations; ?></p>
                 </div>
+                
                 <!-- Delete Button -->
                 <form action="" method="POST" class="absolute top-2 right-2">
                     <input type="hidden" name="project_id" value="<?php echo $project_id; ?>">
@@ -147,6 +152,7 @@ $conn->close();
                         Delete
                     </button>
                 </form>
+                
             </div>
             <?php
         }

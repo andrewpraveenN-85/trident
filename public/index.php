@@ -28,7 +28,7 @@ $result = $conn->query($sql);
   <div class="container mx-auto px-4 py-3 flex items-center justify-between">
     <!-- Logo Section -->
     <a href="https://wa.me/94710777666" class="flex items-center">
-      <img src="LOGO.webp" alt="Logo" class="w-[70px] h-[30px] object-contain z-10" />
+      <img src="lm.png" alt="Logo" class="w-[170px] h-[40px] object-contain z-10" />
     </a>
 
     <!-- Navigation Links -->
@@ -43,9 +43,35 @@ $result = $conn->query($sql);
      <!-- Wrapped Menu Component in a Div -->
   <div class="menu-component">
     <!-- Menu Button -->
-    <button id="menuButton" class="flex items-center text-[#674636] hover:text-[#000000] font-medium mt-2 ml-4">
-      <i class="fas fa-bars mr-1"></i> MENU
-    </button>
+    <button id="menuButton" class="relative flex items-center text-[#674636] hover:text-[#000000] font-bold mt-2 ml-4 px-4 py-2  border-2 border-transparent bg-white transition-all duration-300 ease-in-out rounded-lg">
+    <i class="fas fa-bars mr-1"></i> MENU
+    <span class="absolute inset-0 border-2 border-[#674636] rounded-md animate-border"></span>
+</button>
+
+<style>
+  @keyframes borderAnimation {
+    0% {
+      clip-path: inset(0 100% 100% 0);
+    }
+    25% {
+      clip-path: inset(0 0 100% 0);
+    }
+    50% {
+      clip-path: inset(0 0 0 100%);
+    }
+    75% {
+      clip-path: inset(100% 0 0 0);
+    }
+    100% {
+      clip-path: inset(0 100% 100% 0);
+    }
+  }
+
+  .animate-border {
+    animation: borderAnimation 2s linear infinite;
+  }
+</style>
+
 
     <!-- Full-Screen Menu -->
     <div id="menuOverlay" class="fixed inset-0 bg-white bg-opacity-95 hidden z-50 flex items-center justify-center">
@@ -59,6 +85,7 @@ $result = $conn->query($sql);
         <li class="fade-slide"><a href="Complet2.php" class="hover:underline">Completed Projects</a></li>
         <li class="fade-slide"><a href="upload.php" class="hover:underline">Upcoming Projects</a></li>
         <li class="fade-slide"><a href="vb1.mp4" class="hover:underline">Demo Reel</a></li>
+        <li class="fade-slide"><a href="#section6" class="hover:underline">Contact Us</a></li>
         
       </ul>
     </div>
@@ -114,7 +141,7 @@ $result = $conn->query($sql);
 
 
 
-<div class="relative w-full h-screen overflow-hidden -mb-20">
+<div class="relative w-full h-screen overflow-hidden -mb-36 -mt-2">
   <!-- Background Scroll Container -->
   <div id="backgroundScroll" class="flex w-[300%] h-5/6 transition-transform duration-500">
     <!-- Slide 1 -->
@@ -216,13 +243,13 @@ $result = $conn->query($sql);
 
 
 
-  <section id="section2" class="min-h-screen bg-[#F5F1E5] flex flex-col items-center justify-center px-4 md:px-6 py-8 md:py-16">
+  <section id="section2" class="min-h-screen bg-[#F5F1E5] flex flex-col items-center justify-center px-4 md:px-6 py-8 md:py-4">
   <div class="flex flex-col lg:flex-row items-center lg:space-x-12 max-w-7xl w-full">
     
     <!-- Left Image with Text Overlay -->
     <div class="relative w-full lg:w-1/2">
       <img
-        src="q34.png"
+        src="lm3.png"
         alt="Building"
         class="rounded-lg object-cover w-[550px] h-auto"
       >
@@ -259,14 +286,12 @@ $result = $conn->query($sql);
 
   <section class="bg-cover bg-center bg-[#F5F1E5] text-black h-[60vh] px-4 py-0 md:py-0">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
-    <div class="max-w-4xl mx-auto text-center p-4 md:p-8" style="font-family: 'Lora', serif;">
+    <div class="max-w-4xl mx-auto text-center p-4 md:p-2" style="font-family: 'Lora', serif;">
       <!-- Title -->
-      <h1 class="text-3xl md:text-2xl font-bold uppercase mb-0 md:mb-0">
-        Our Vision & Mission
-      </h1>
+      
       
       <!-- Our Vision Section -->
-      <div class="mb-8">
+      <div class="mb-2">
         <h2 class="text-2xl md:text-xl font-semibold mb-4 mt-4">
           Our Vision
         </h2>
@@ -391,7 +416,7 @@ $result = $conn->query($sql);
           
           <!-- Left Image -->
           <div
-          class="w-full h-60 overflow-hidden shadow-lg relative object-cover filter brightness-75 md:w-4/6 md:h-96 hidden md:inline contrast-80"
+          class="w-full h-60 overflow-hidden shadow-lg relative object-cover filter brightness-75 md:w-4/6 md:h-96  hidden md:inline contrast-80"
           style="
             border-radius: 0; /* Reset radius for mobile */
             border-top-right-radius: 50px; /* Apply for larger screens */
@@ -414,13 +439,8 @@ $result = $conn->query($sql);
         
       
           <!-- Text Content -->
-          <div class="md:w-2/3 w-full px-1 items-center text-center md:mt-32 md:ml-36">
-            <p
-              class="font-bold text-3xl text-gray-900 mb-4"
-              style="font-family: 'Lora', serif;"
-            >
-              If you can dream it, <br> we can build it.
-            </p>
+          <div class="md:w-2/3 w-full px-1 items-center text-center md:mt-32 md:ml-44">
+            
             <p class="text-gray-700 leading-relaxed text-center text-[16px] " style="font-family: 'Lora', serif;">
               We adopt a uniquely personalized perspective to each project to deliver stunning spaces of optimal function.
               Renowned for our architectural understanding and masterful craftsmanship, our portfolio of residential
@@ -429,7 +449,7 @@ $result = $conn->query($sql);
             <button>
               <div class="flex items-center justify-center mt-4 h-16 w-auto" style="font-family: 'Lora', serif;">
                 <a href="upload.php" class="inline-block px-6 py-2 bg-black text-white text-lg font-semibold rounded-full text-center hover:bg-[#674636]  transition duration-300">
-                  View More
+                  See More
                 </a>
               </div>
               
@@ -536,7 +556,7 @@ $result = $conn->query($sql);
       controls 
       class="w-full h-auto mt-24 rounded-lg shadow-lg transition-transform duration-500"
     >
-      <source src="vb1.mp4" type="video/mp4" />
+      <source src="pp.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
     
@@ -695,78 +715,92 @@ $result = $conn->query($sql);
 
 
 
-<!-- Contact Us Section -->
-<section id="section6" class="bg-[#F5F1E5] text-gray-800 py-10">
-  <div class="container mx-auto px-6">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
-      <!-- Vertical Line -->
-      <div class="hidden md:block absolute inset-y-0 left-1/2 transform -translate-x-1/2 w-[1px] bg-gray-400"></div>
 
-      <!-- Left Side -->
-      <div class="pr-6">
-        <h2 class="text-lg font-bold text-[#674636] mb-4">Contact Us</h2>
-        <p class="text-sm text-gray-700 mb-6">
+
+
+<!-- Contact Us Section -->
+<section id="section6" class="bg-[#F5F1E5] text-gray-800 py-12">
+  <div class="container mx-auto px-6 md:px-36">
+    <div class="flex flex-col md:flex-row items-stretch gap-12 text-center md:text-left">
+      
+      <!-- Left Side (Contact Details) -->
+      <div class="flex-1 space-y-6 flex flex-col justify-center">
+        <h2 class="text-2xl font-bold text-[#674636]">Contact Us</h2>
+        <p class="text-sm text-gray-700">
           We’re here to help! Feel free to contact us via WhatsApp, email, or visit our office.
         </p>
+
         <!-- Address -->
-        <div class="flex items-start space-x-3 mb-4">
-          <i class="fas fa-map-marker-alt text-[#AA7753] text-xl"></i>
+        <div class="flex items-start justify-center md:justify-start space-x-3">
+          <i class="fas fa-map-marker-alt text-[#AA7753] text-2xl"></i>
           <p class="text-sm">
             <strong class="text-[#674636]">Address:</strong> 149, Galle Road, Dehiwala.
           </p>
         </div>
-        <!-- Email -->
-        <div class="flex items-start space-x-3 mb-4">
-          <i class="fas fa-envelope text-[#AA7753] text-xl"></i>
+
+        <!-- Email & Hotline -->
+        <div class="flex items-start justify-center md:justify-start space-x-3">
+          <i class="fas fa-envelope text-[#AA7753] text-2xl"></i>
           <p class="text-sm">
             <strong class="text-[#674636]">Email:</strong>
             <a href="mailto:trident@assiduaint.com" class="text-[#674636] hover:text-[#AA7753]">trident@assiduaint.com</a>
+            <br>
+            <strong class="text-[#674636]">Hot Line:</strong>
+            <a class="text-[#674636] hover:text-[#AA7753]">+94 11 273 5100</a>
           </p>
         </div>
-      </div>
 
-      <!-- Right Side -->
-      <div class="pl-6">
-        <h2 class="text-lg font-bold text-[#674636] mb-4">WhatsApp Contacts</h2>
-        <div class="space-y-4">
-          <a href="https://wa.me/94710777667" class="flex items-center space-x-3 hover:text-green-500">
-            <i class="fab fa-whatsapp text-green-600 text-xl"></i>
+        <!-- WhatsApp Contacts -->
+        <h3 class="text-lg font-bold text-[#674636] mt-4">WhatsApp Contacts</h3>
+        <div class="space-y-3">
+          <a href="https://wa.me/94710777667" class="flex items-center justify-center md:justify-start space-x-3 hover:text-green-500">
+            <i class="fab fa-whatsapp text-green-600 text-2xl"></i>
             <span class="text-sm">+94 77 321 9679 - (Project Manager)</span>
           </a>
-          <a href="https://wa.me/94710777666" class="flex items-center space-x-3 hover:text-green-500">
-            <i class="fab fa-whatsapp text-green-600 text-xl"></i>
+          <a href="https://wa.me/94710777666" class="flex items-center justify-center md:justify-start space-x-3 hover:text-green-500">
+            <i class="fab fa-whatsapp text-green-600 text-2xl"></i>
             <span class="text-sm">+94 71 426 6679 - (Director)</span>
           </a>
         </div>
       </div>
+
+      <!-- Center Vertical Line -->
+      <div class="hidden md:block w-[2px] bg-gray-400 self-stretch"></div>
+
+      <!-- Right Side (Logo) -->
+      <div class="flex-1 flex justify-center items-center">
+        <img src="LR1.png" alt="Company Logo" class="w-60 h-60 object-contain">
+      </div>
+
     </div>
   </div>
 </section>
-
-
-
-
-
-
-
-
-
-
 <!-- Footer Section -->
+
 <footer class="bg-[#F5F1E5] text-black py-10">
   <div class="container mx-auto px-6">
     <!-- Footer Columns -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-      <!-- Shan Group of Companies -->
-      <div>
-        <h3 class="font-semibold text-lg text-black mb-2">Shan Group of Companies</h3>
-        <p class="text-sm">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 text-center md:text-left">
+      <!-- Main Company -->
+      <div class="border-l-4 border-blue-500 pl-4 mr-8 md:mr-0">
+        <h3 class="font-semibold text-xl text-blue-800 mb-2">SHAN GROUP OF COMPANIES</h3>
+        <p class="text-sm text-gray-700">
           Address: The Metropolis Tower, Office 204/205, 2nd Floor, Business Bay, Dubai, UAE.<br>
-          <a href="https://www.shangroup.org" class="text-blue-600 hover:text-blue-800">www.shangroup.org</a>
+          <a href="https://www.shangroup.org" class="text-blue-600 hover:text-blue-800 underline">www.shangroup.org</a>
         </p>
       </div>
 
-      <!-- Shan Global Employment Services -->
+      <!-- Sub-Company -->
+      <div class="ml-4 border-l-4 border-gray-300 pl-4 mr-8 md:mr-0">
+        <h3 class="font-semibold text-lg text-gray-700 mb-2">Trident Residencies (Pvt) Ltd.</h3>
+        <p class="text-sm text-gray-600">
+          Location: 149, Galle Road, Dehiwala.<br>
+          <a href="mailto:trident@assiduaint.com" class="text-blue-500 hover:text-blue-700 underline">trident@assiduaint.com</a><br>
+          Phone: +94 71 426 6679
+        </p>
+      </div>
+
+      <!-- New Company -->
       <div>
         <h3 class="font-semibold text-lg text-black mb-2">Shan Global Employment Services LLC</h3>
         <p class="text-sm">
@@ -791,6 +825,7 @@ $result = $conn->query($sql);
         <h3 class="font-semibold text-lg text-black mb-2">Assidua International (Pvt) Ltd.</h3>
         <p class="text-sm">
           Address: 149, Galle Road, Dehiwala.<br>
+          <a href="mailto:office@assiduaint.com" class="text-blue-600 hover:text-blue-800">office@assiduaint.com</a><br>
           Phone: 0112-735098 / 070 615 2999
         </p>
       </div>
@@ -800,16 +835,15 @@ $result = $conn->query($sql);
     <div class="my-10 border-t border-gray-300"></div>
 
     <!-- Bottom Section -->
-    <div class="flex flex-col md:flex-row justify-between items-center">
+    <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
       <p class="text-sm">&copy; 2025 Cloud-Jay Software. All rights reserved.</p>
-      <div class="flex space-x-6">
+      <div class="flex space-x-6 mt-4 md:mt-0">
         <a href="#" class="text-gray-600 hover:text-gray-800">Terms of Services</a>
         <a href="#" class="text-gray-600 hover:text-gray-800">Privacy Policy</a>
       </div>
     </div>
   </div>
 </footer>
-
 
 
       

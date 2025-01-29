@@ -75,9 +75,13 @@ $conn->close();
                     }
                     ?>
                     <a href="projects.php?project_id=<?php echo $project_id; ?>" class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 transform hover:scale-105">
-                        <div class="shadow-lg">
-                            <img src="<?php echo $image_path; ?>" alt="Project Image" class="w-full h-60 object-cover">
-                        </div>
+                    <div class="relative shadow-lg">
+    <img src="<?php echo htmlspecialchars($first_image); ?>" alt="Project Image" class="w-full h-60 object-cover">
+    <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
+        <p class="text-white text-lg font-bold opacity-80">See More</p>
+    </div>
+</div>
+
                         <div class="bg-[#674636] text-white  text-center py-4">
                             <p class="font-bold text-lg"><?php echo $project_name; ?></p>
                             <p class="text-sm"><?php echo $locations; ?></p>

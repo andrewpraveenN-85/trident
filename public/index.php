@@ -48,7 +48,7 @@ $result = $conn->query($sql);
   <div class="container mx-auto px-4 py-3 flex items-center justify-between">
     <!-- Logo Section -->
     <a href="https://wa.me/94710777666" class="flex items-center">
-      <img src="lm.png" alt="Logo" class="w-[170px] h-[40px] object-contain z-10" />
+      <img src="lm.png" alt="Logo" class="w-[200px] h-[50px] object-contain z-10" />
     </a>
 
     <!-- Navigation Links -->
@@ -104,7 +104,7 @@ $result = $conn->query($sql);
         <li class="fade-slide"><a href="index.php" class="hover:underline">Home</a></li>
         <li class="fade-slide"><a href="Complet2.php" class="hover:underline">Completed Projects</a></li>
         <li class="fade-slide"><a href="upload.php" class="hover:underline">Upcoming Projects</a></li>
-        <li class="fade-slide"><a href="vb1.mp4" class="hover:underline">Demo Reel</a></li>
+        <li class="fade-slide"><a href="pp.mp4" class="hover:underline">Demo Reel</a></li>
         <li class="fade-slide"><a href="#section6" class="hover:underline">Contact Us</a></li>
         
       </ul>

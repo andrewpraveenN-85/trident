@@ -10,9 +10,29 @@ $result = $conn->query($sql);
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trident</title>
+  <title>Trident Residencies</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="../src/output.css" rel="stylesheet">
+  <title>Trident Residencies Pvt Ltd | Luxury Apartments & Villas in Sri Lanka</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Discover premium living with Trident Residencies Pvt Ltd, offering luxurious apartments and modern villas in prime locations across Sri Lanka. Experience elegance, comfort, and top-tier amenities for a dream home or investment.">
+    <meta name="keywords" content="Trident Residencies, luxury apartments Sri Lanka, modern villas Sri Lanka, real estate Sri Lanka, premium residences, apartment for sale Sri Lanka, Sri Lanka real estate investment, Trident Residencies Pvt Ltd, high-end living, property developers Sri Lanka">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Trident Residencies Pvt Ltd">
+    
+    <!-- Open Graph (OG) for Social Media -->
+    <meta property="og:title" content="Trident Residencies Pvt Ltd | Luxury Apartments & Villas in Sri Lanka">
+    <meta property="og:description" content="Discover premium living with Trident Residencies Pvt Ltd, offering luxurious apartments and modern villas in prime locations across Sri Lanka. Experience elegance, comfort, and top-tier amenities for a dream home or investment.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.tridentresidencies.com">
+    <meta property="og:image" content="https://www.tridentresidencies.com/preview.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <link rel="shortcut icon" href="favicon.png">
+
 </head>
 
 <body class="bg-[#F5F1E5]">

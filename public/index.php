@@ -861,7 +861,7 @@ $result = $conn->query($sql);
 
       <!-- New Company -->
       <div>
-        <h3 class="font-semibold text-lg text-[#674636] mb-2">Shan Global Employment Services LLC</h3>
+        <h3 class="font-semibold text-lg text-[#674636] mb-2">Shan Global Employment Services LLC.</h3>
         <p class="text-sm">
           Dubai, UAE.<br>
           <a href="https://www.shandxb.com" class="text-[#674636] hover:text-[#f4905e]">www.shandxb.com</a><br>
@@ -871,7 +871,7 @@ $result = $conn->query($sql);
 
       <!-- Shan Global Technical Services -->
       <div>
-        <h3 class="font-semibold text-lg text-[#674636] mb-2">Shan Global Technical Services LLC</h3>
+        <h3 class="font-semibold text-lg text-[#674636] mb-2">Shan Global Technical Services LLC.</h3>
         <p class="text-sm">
           Dubai, UAE.<br>
           <a href="https://www.shandxb.com" class="text-[#674636] hover:text-[#f4905e]">www.shandxb.com</a><br>

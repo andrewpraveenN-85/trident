@@ -838,10 +838,10 @@ $result = $conn->query($sql);
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 text-center md:text-left">
       
       <!-- Main Company -->
-      <div class="border-l-4 border-[#674636] pl-4 mr-2 md:mr-0 flex flex-col items-center md:items-start">
+      <div class="md:border-l-4 border-[#674636] pl-4 mr-2 md:mr-0 flex flex-col items-center md:items-start">
         <div class="flex items-center mb-2">
           <h3 class="font-semibold text-xl text-[#674636]">SHAN GROUP OF COMPANIES</h3>
-          <img src="557.jpg" alt="Company Logo" class="w-[40px] h-auto ml-4 object-contain">
+        
         </div>
         <p class="text-sm text-gray-700">
           The Metropolis Tower, Office 204/205, 2nd Floor, Business Bay, Dubai, UAE.<br>
@@ -850,12 +850,12 @@ $result = $conn->query($sql);
       </div>
 
       <!-- Sub-Company -->
-      <div class="ml-4 border-l-4 border-gray-300 pl-4 mr-8 md:mr-8">
-      <h3 class="font-semibold text-lg text-[#674636] mb-2">Assidua International (Pvt) Ltd.</h3>
+      <div class="ml-4 md:border-l-4 border-gray-300 pl-4 mr-8 md:mr-8">
+      <h3 class="font-semibold text-lg text-[#674636] mb-2">Shan Global Technical Services LLC.</h3>
         <p class="text-sm">
-          149, Galle Road, Dehiwala.<br>
-          <a href="mailto:office@assiduaint.com" class="text-[#674636] hover:text-[#f4905e]">office@assiduaint.com</a><br>
-          Phone: 0112-735098 / 070 615 2999
+          Dubai, UAE.<br>
+          <a href="https://www.shandxb.com" class="text-[#674636] hover:text-[#f4905e]">www.shandxb.com</a><br>
+          Phone: +971 4580 5678
         </p>
       </div>
 
@@ -871,11 +871,11 @@ $result = $conn->query($sql);
 
       <!-- Shan Global Technical Services -->
       <div>
-        <h3 class="font-semibold text-lg text-[#674636] mb-2">Shan Global Technical Services LLC.</h3>
+      <h3 class="font-semibold text-lg text-[#674636] mb-2">Assidua International (Pvt) Ltd.</h3>
         <p class="text-sm">
-          Dubai, UAE.<br>
-          <a href="https://www.shandxb.com" class="text-[#674636] hover:text-[#f4905e]">www.shandxb.com</a><br>
-          Phone: +971 4580 5678
+          149, Galle Road, Dehiwala.<br>
+          <a href="mailto:office@assiduaint.com" class="text-[#674636] hover:text-[#f4905e]">office@assiduaint.com</a><br>
+          Phone: 0112-735098 / 070 615 2999
         </p>
       </div>
 

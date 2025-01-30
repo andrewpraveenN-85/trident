@@ -104,12 +104,46 @@ $result = $conn->query($sql);
         <li class="fade-slide"><a href="index.php" class="hover:underline">Home</a></li>
         <li class="fade-slide"><a href="Complet2.php" class="hover:underline">Completed Projects</a></li>
         <li class="fade-slide"><a href="upload.php" class="hover:underline">Upcoming Projects</a></li>
-        <li class="fade-slide"><a href="pp.mp4" class="hover:underline">Demo Reel</a></li>
-        <li class="fade-slide"><a href="#section6" class="hover:underline">Contact Us</a></li>
+        <li class="fade-slide"><a href="pp.MP4" class="hover:underline">Demo Reel</a></li>
+        <li class="fade-slide"><a href="contact.php" class="hover:underline">Contact Us</a></li>
         
       </ul>
     </div>
   </div>
+  <script>
+  // Open Menu
+  document.getElementById("menuButton").addEventListener("click", function () {
+    const overlay = document.getElementById("menuOverlay");
+    overlay.classList.remove("hidden");
+    setTimeout(() => overlay.classList.add("flex"), 0); // Add flex after removing hidden
+  });
+
+  // Close Menu
+  document.getElementById("closeMenu").addEventListener("click", function () {
+    closeMenu();
+  });
+
+  // Function to Close Menu
+  function closeMenu() {
+    const overlay = document.getElementById("menuOverlay");
+    overlay.classList.add("hidden");
+    overlay.classList.remove("flex");
+  }
+
+  // Scroll to Section & Close Menu
+  document.querySelector('a[href="#section6"]').addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent default link behavior
+    closeMenu(); // Close the menu
+    
+    // Smooth Scroll to Contact Us Section
+    document.querySelector("#section6").scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  });
+
+</script>
+
 
   <!-- JavaScript -->
   <script>
@@ -277,16 +311,16 @@ $result = $conn->query($sql);
 
     <!-- Right Text Section -->
     <div class="mt-8 md:mt-12 lg:mt-0 lg:w-1/2">
-      <h1 class="text-2xl md:text-3xl lg:text-4xl font-sun-serif font-bold mb-6 text-black text-center lg:text-left"  style="font-family: 'Helvtica',sun-serif;">
+      <h1 class="text-2xl md:text-3xl lg:text-4xl font-sun-serif font-bold mb-6 text-[#674636] text-center lg:text-left"  style="font-family: 'Helvtica',sun-serif;">
         Welcome to Trident Residencies Pvt Ltd
       </h1>
-      <p class="text-black text-base md:text-[16px] font-serif leading-6 md:leading-7 mb-4 text-center lg:text-left" style="font-family: 'Lora', serif;">
+      <p class="text-[#674636] text-base md:text-[16px] font-serif leading-6 md:leading-7 mb-4 text-center lg:text-left" style="font-family: 'Lora', serif;">
         Welcome to <strong>Trident Residencies</strong>, where your dream home becomes reality. Founded in 2017 by visionary entrepreneur Mr. Shan B, we craft homes that blend modern design with natural harmony.
       </p>
-      <p class="text-black text-base md:text-[16px] font-serif leading-6 md:leading-7 mb-4 text-center lg:text-left" style="font-family: 'Lora', serif;">
+      <p class="text-[#674636] text-base md:text-[16px] font-serif leading-6 md:leading-7 mb-4 text-center lg:text-left" style="font-family: 'Lora', serif;">
         Guided by our promise, <strong>"Your Vision, Our Design,"</strong> we create spaces that redefine modern living with exceptional quality and thoughtful innovation.
       </p>
-      <p class="text-black text-base md:text-[16px] font-serif leading-6 md:leading-7 text-center lg:text-left" style="font-family: 'Lora', serif;">
+      <p class="text-[#674636] text-base md:text-[16px] font-serif leading-6 md:leading-7 text-center lg:text-left" style="font-family: 'Lora', serif;">
         Discover a home that’s more than a place to live—it’s a reflection of your aspirations. <strong>Trident Residencies: Where dreams come home.</strong>
       </p>
     </div>
@@ -304,7 +338,7 @@ $result = $conn->query($sql);
   </div>
 
 
-  <section class="bg-cover bg-center bg-[#F5F1E5] text-black h-[60vh] px-4 py-0 md:py-0">
+  <section class="bg-cover bg-center bg-[#F5F1E5] text-[#674636] h-[60vh] px-4 py-0 md:py-0">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <div class="max-w-4xl mx-auto text-center p-4 md:p-2" style="font-family: 'Lora', serif;">
       <!-- Title -->
@@ -468,7 +502,7 @@ $result = $conn->query($sql);
             </p>
             <button>
               <div class="flex items-center justify-center mt-4 h-16 w-auto" style="font-family: 'Lora', serif;">
-                <a href="upload.php" class="inline-block px-6 py-2 bg-black text-white text-lg font-semibold rounded-full text-center hover:bg-[#674636]  transition duration-300">
+                <a href="upload.php" class="inline-block px-6 py-2 bg-[#674636] text-white text-lg font-semibold rounded-full text-center hover:bg-black  transition duration-300">
                   See More
                 </a>
               </div>
@@ -576,7 +610,7 @@ $result = $conn->query($sql);
       controls 
       class="w-full h-auto mt-24 rounded-lg shadow-lg transition-transform duration-500"
     >
-      <source src="pp.mp4" type="video/mp4" />
+      <source src="pp.MP4" type="video/MP4" />
       Your browser does not support the video tag.
     </video>
     
@@ -789,64 +823,69 @@ $result = $conn->query($sql);
 
       <!-- Right Side (Logo) -->
       <div class="flex-1 flex justify-center items-center">
-        <img src="LR1.png" alt="Company Logo" class="w-60 h-60 object-contain">
+        <img src="94.png" alt="Company Logo" class="w-[400px] h-[400px] object-contain">
       </div>
 
     </div>
   </div>
 </section>
-<!-- Footer Section -->
 
+
+<!-- Footer Section -->
 <footer class="bg-[#F5F1E5] text-black py-10">
   <div class="container mx-auto px-6">
     <!-- Footer Columns -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 text-center md:text-left">
+      
       <!-- Main Company -->
-      <div class="border-l-4 border-blue-500 pl-4 mr-8 md:mr-0">
-        <h3 class="font-semibold text-xl text-blue-800 mb-2">SHAN GROUP OF COMPANIES</h3>
+      <div class="border-l-4 border-[#674636] pl-4 mr-2 md:mr-0 flex flex-col items-center md:items-start">
+        <div class="flex items-center mb-2">
+          <h3 class="font-semibold text-xl text-[#674636]">SHAN GROUP OF COMPANIES</h3>
+          <img src="557.jpg" alt="Company Logo" class="w-[40px] h-auto ml-4 object-contain">
+        </div>
         <p class="text-sm text-gray-700">
-          Address: The Metropolis Tower, Office 204/205, 2nd Floor, Business Bay, Dubai, UAE.<br>
-          <a href="https://www.shangroup.org" class="text-blue-600 hover:text-blue-800 underline">www.shangroup.org</a>
+          The Metropolis Tower, Office 204/205, 2nd Floor, Business Bay, Dubai, UAE.<br>
+          <a href="https://www.shangroup.org" class="text-[#674636] hover:text-[#f4905e] underline">www.shangroup.org</a>
         </p>
       </div>
 
       <!-- Sub-Company -->
-      <div class="ml-4 border-l-4 border-gray-300 pl-4 mr-8 md:mr-0">
-        <h3 class="font-semibold text-lg text-gray-700 mb-2">Trident Residencies (Pvt) Ltd.</h3>
-        <p class="text-sm text-gray-600">
-          Location: 149, Galle Road, Dehiwala.<br>
-          <a href="mailto:trident@assiduaint.com" class="text-blue-500 hover:text-blue-700 underline">trident@assiduaint.com</a><br>
-          Phone: +94 71 426 6679
+      <div class="ml-4 border-l-4 border-gray-300 pl-4 mr-8 md:mr-8">
+      <h3 class="font-semibold text-lg text-[#674636] mb-2">Assidua International (Pvt) Ltd.</h3>
+        <p class="text-sm">
+          149, Galle Road, Dehiwala.<br>
+          <a href="mailto:office@assiduaint.com" class="text-[#674636] hover:text-[#f4905e]">office@assiduaint.com</a><br>
+          Phone: 0112-735098 / 070 615 2999
         </p>
       </div>
 
       <!-- New Company -->
       <div>
-        <h3 class="font-semibold text-lg text-black mb-2">Shan Global Employment Services LLC</h3>
+        <h3 class="font-semibold text-lg text-[#674636] mb-2">Shan Global Employment Services LLC</h3>
         <p class="text-sm">
-          Location: Dubai, UAE.<br>
-          <a href="https://www.shandxb.com" class="text-blue-600 hover:text-blue-800">www.shandxb.com</a><br>
+          Dubai, UAE.<br>
+          <a href="https://www.shandxb.com" class="text-[#674636] hover:text-[#f4905e]">www.shandxb.com</a><br>
           Phone: +971 4580 5678
         </p>
       </div>
 
       <!-- Shan Global Technical Services -->
       <div>
-        <h3 class="font-semibold text-lg text-black mb-2">Shan Global Technical Services LLC</h3>
+        <h3 class="font-semibold text-lg text-[#674636] mb-2">Shan Global Technical Services LLC</h3>
         <p class="text-sm">
-          Location: Dubai, UAE.<br>
-          <a href="https://www.shandxb.com" class="text-blue-600 hover:text-blue-800">www.shandxb.com</a><br>
+          Dubai, UAE.<br>
+          <a href="https://www.shandxb.com" class="text-[#674636] hover:text-[#f4905e]">www.shandxb.com</a><br>
           Phone: +971 4580 5678
         </p>
       </div>
 
       <!-- Assidua International -->
       <div>
-        <h3 class="font-semibold text-lg text-black mb-2">Assidua International (Pvt) Ltd.</h3>
-        <p class="text-sm">
-          Address: 149, Galle Road, Dehiwala.<br>
-          <a href="mailto:office@assiduaint.com" class="text-blue-600 hover:text-blue-800">office@assiduaint.com</a><br>
-          Phone: 0112-735098 / 070 615 2999
+      <h3 class="font-semibold text-lg text-[#674636] mb-2">Trident Residencies (Pvt) Ltd.</h3>
+        <p class="text-sm text-gray-600">
+          149, Galle Road, Dehiwala.<br>
+          <a href="mailto:trident@assiduaint.com" class="text-[#674636] hover:text-[#f4905e] underline">trident@assiduaint.com</a><br>
+          Phone: +94 71 426 6679
         </p>
       </div>
     </div>

@@ -17,7 +17,6 @@
     <span>Back</span>
   </a>
 </div>
-
 <!-- Contact Us Section -->
 <section id="section6" class="bg-[#F5F1E5] text-gray-800 py-12">
   <div class="container mx-auto px-6 md:px-36">
@@ -69,34 +68,39 @@
 
       <!-- Right Side (Logo) -->
       <div class="flex-1 flex justify-center items-center">
-        <img src="LR1.png" alt="Company Logo" class="w-60 h-60 object-contain">
+        <img src="94.png" alt="Company Logo" class="w-[400px] h-[400px] object-contain">
       </div>
 
     </div>
   </div>
 </section>
-<!-- Footer Section -->
 
+
+<!-- Footer Section -->
 <footer class="bg-[#F5F1E5] text-black py-10">
   <div class="container mx-auto px-6">
     <!-- Footer Columns -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 text-center md:text-left">
+      
       <!-- Main Company -->
-      <div class="border-l-4 border-[#674636] pl-4 mr-8 md:mr-0">
-        <h3 class="font-semibold text-xl text-[#674636] mb-2">SHAN GROUP OF COMPANIES</h3>
+      <div class="border-l-4 border-[#674636] pl-4 mr-2 md:mr-0 flex flex-col items-center md:items-start">
+        <div class="flex items-center mb-2">
+          <h3 class="font-semibold text-xl text-[#674636]">SHAN GROUP OF COMPANIES</h3>
+          <img src="557.jpg" alt="Company Logo" class="w-[40px] h-auto ml-4 object-contain">
+        </div>
         <p class="text-sm text-gray-700">
           The Metropolis Tower, Office 204/205, 2nd Floor, Business Bay, Dubai, UAE.<br>
-          <a href="https://www.shangroup.org" class="text-[#674636] hover:text-blue-800 underline">www.shangroup.org</a>
+          <a href="https://www.shangroup.org" class="text-[#674636] hover:text-[#f4905e] underline">www.shangroup.org</a>
         </p>
       </div>
 
       <!-- Sub-Company -->
-      <div class="ml-4 border-l-4 border-gray-300 pl-4 mr-8 md:mr-0">
-        <h3 class="font-semibold text-lg text-[#674636] mb-2">Trident Residencies (Pvt) Ltd.</h3>
-        <p class="text-sm text-gray-600">
+      <div class="ml-4 border-l-4 border-gray-300 pl-4 mr-8 md:mr-8">
+      <h3 class="font-semibold text-lg text-[#674636] mb-2">Assidua International (Pvt) Ltd.</h3>
+        <p class="text-sm">
           149, Galle Road, Dehiwala.<br>
-          <a href="mailto:trident@assiduaint.com" class="text-[#674636] hover:text-[#f4905e] underline">trident@assiduaint.com</a><br>
-          Phone: +94 71 426 6679
+          <a href="mailto:office@assiduaint.com" class="text-[#674636] hover:text-[#f4905e]">office@assiduaint.com</a><br>
+          Phone: 0112-735098 / 070 615 2999
         </p>
       </div>
 
@@ -122,11 +126,11 @@
 
       <!-- Assidua International -->
       <div>
-        <h3 class="font-semibold text-lg text-[#674636]mb-2">Assidua International (Pvt) Ltd.</h3>
-        <p class="text-sm">
+      <h3 class="font-semibold text-lg text-[#674636] mb-2">Trident Residencies (Pvt) Ltd.</h3>
+        <p class="text-sm text-gray-600">
           149, Galle Road, Dehiwala.<br>
-          <a href="mailto:office@assiduaint.com" class="text-[#674636] hover:text-[#f4905e]">office@assiduaint.com</a><br>
-          Phone: 0112-735098 / 070 615 2999
+          <a href="mailto:trident@assiduaint.com" class="text-[#674636] hover:text-[#f4905e] underline">trident@assiduaint.com</a><br>
+          Phone: +94 71 426 6679
         </p>
       </div>
     </div>
@@ -144,7 +148,6 @@
     </div>
   </div>
 </footer>
-
 
 
 

@@ -576,7 +576,7 @@ $result = $conn->query($sql);
       controls 
       class="w-full h-auto mt-24 rounded-lg shadow-lg transition-transform duration-500"
     >
-      <source src="pp.mp4" type="video/mp4" />
+      <source src="pp.MP4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
     

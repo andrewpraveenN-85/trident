@@ -17,7 +17,7 @@ $result = $conn->query($sql);
     
     <!-- Meta Tags -->
     <meta name="description" content="Discover premium living with Trident Residencies Pvt Ltd, offering luxurious apartments and modern villas in prime locations across Sri Lanka. Experience elegance, comfort, and top-tier amenities for a dream home or investment.">
-    <meta name="keywords" content="Trident Residencies, luxury apartments Sri Lanka, modern villas Sri Lanka, real estate Sri Lanka, premium residences, apartment for sale Sri Lanka, Sri Lanka real estate investment, Trident Residencies Pvt Ltd, high-end living, property developers Sri Lanka">
+    <meta name="keywords" content="Trident Residencies, luxury apartments Sri Lanka, modern villas Sri Lanka, real estate Sri Lanka, premium residences, apartment for sale Sri Lanka, Sri Lanka real estate investment, Trident Residencies Pvt Ltd, high-end living, property developers Sri Lanka, trident residencies, trident residencies sri lanka, trident residencies dehiwala, trident residencies pvt ltd, shan b entrepreneur, modern home design sri lanka, natural harmony homes, completed residential projects rathmalana, upcoming residential projects sri lanka, pantry designs sri lanka, architecture sri lanka, property development sri lanka, interior design sri lanka, dream homes sri lanka, modern living sri lanka, residential projects rathmalana, mallikarama road projects, saman mawatha projects, galle road dehiwala, assidua international">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Trident Residencies Pvt Ltd">
     

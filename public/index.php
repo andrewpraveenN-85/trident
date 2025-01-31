@@ -34,7 +34,15 @@ $result = $conn->query($sql);
     <link rel="shortcut icon" href="favicon.png">
 
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0KS6CJWZ06"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-0KS6CJWZ06');
+</script>
 <body class="bg-[#F5F1E5]">
 
 

@@ -27,7 +27,9 @@ $result = $conn->query($sql);
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.tridentresidencies.com">
     <meta property="og:image" content="https://www.tridentresidencies.com/preview.jpg">
-    
+
+    <meta name="google-site-verification" content="QdPAbDzpMkMavz3Qdc9tOB3bnoCivKNPNIF3dqpaACs" />
+  
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
